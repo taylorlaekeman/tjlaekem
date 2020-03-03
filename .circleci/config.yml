@@ -44,6 +44,7 @@ jobs:
           echo $GCP_SERVICE_KEY | gcould auth activate-service-account --key-file=-
           gcloud --quiet config set project $GCP_PROJECT_ID
           gcloud --quiet config set compute/zone $GCP_COMPUTE_ZONE
+          echo "test"
 
 workflows:
   version: 2
