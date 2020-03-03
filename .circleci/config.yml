@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 jobs:
   install:
     docker:
@@ -29,8 +29,6 @@ jobs:
           at: /home/circleci/project
       - run: |
           make build
-          ls
-          ls build
       - persist_to_workspace:
           root: /home/circleci/project/
           paths:
