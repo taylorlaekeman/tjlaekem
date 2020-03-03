@@ -27,7 +27,10 @@ jobs:
       - checkout
       - attach_workspace:
           at: /home/circleci/project
-      - run: make build
+      - run: |
+          make build
+          ls
+          ls build
       - persist_to_workspace:
           root: /home/circleci/project/
           paths:
