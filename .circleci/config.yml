@@ -1,0 +1,62 @@
+version: 2.1
+jobs:
+  install:
+    docker:
+      - image: circleci/node:12.2.0
+    steps:
+      - checkout
+      - run: make install
+      - persist_to_workspace:
+          root: /home/circleci/project/
+          paths:
+            - node_modules
+
+  lint:
+    docker:
+      - image: circleci/node:12.2.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /home/circleci/project
+      - run: make lint
+
+  build:
+    docker:
+      - image: circleci/node:12.2.0
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /home/circleci/project
+      - run: make build
+      - persist_to_workspace:
+          root: /home/circleci/project/
+          paths:
+            - build
+
+  deploy:
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - checkout
+      - attach_workspace:
+          at: /home/circleci/project/
+      - run: |
+          echo $GCP_SERVICE_KEY | gcould auth activate-service-account --key-file=-
+          gcloud --quiet config set project $GCP_PROJECT_ID
+          gcloud --quiet config set compute/zone $GCP_COMPUTE_ZONE
+
+workflows:
+  version: 2
+  test_build_deploy:
+    jobs:
+      - install
+      - lint:
+          requires:
+            - install
+      - build:
+          requires:
+            - install
+      - deploy:
+          requires:
+            - lint
+            - build
