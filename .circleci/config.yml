@@ -31,10 +31,7 @@ jobs:
           ls
           make build
           ls
-      - persist_to_workspace:
-          root: /home/circleci/project/
-          paths:
-            - build
+          pwd
 
   deploy:
     docker:
@@ -44,6 +41,7 @@ jobs:
       - attach_workspace:
           at: /home/circleci/project/
       - run: |
+          pwd
           ls
           ls build
           gsutil rsync -r build gs://tjlaekem.dev
