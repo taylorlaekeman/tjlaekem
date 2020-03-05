@@ -41,8 +41,8 @@ jobs:
       - attach_workspace:
           at: /root/project/
       - run: |
+          echo $GCP_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gsutil rsync -r build gs://tjlaekem.dev
-          #echo $GCP_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           #gcloud --quiet config set project $GCP_PROJECT_ID
           #gcloud --quiet config set compute/zone $GCP_COMPUTE_ZONE
 
