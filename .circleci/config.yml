@@ -43,8 +43,6 @@ jobs:
       - run: |
           echo $GCP_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
           gsutil rsync -r build gs://tjlaekem.dev
-          #gcloud --quiet config set project $GCP_PROJECT_ID
-          #gcloud --quiet config set compute/zone $GCP_COMPUTE_ZONE
 
 workflows:
   version: 2
@@ -61,3 +59,6 @@ workflows:
           requires:
             - lint
             - build
+          filters:
+            branches:
+              only: master
