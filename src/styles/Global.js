@@ -13,7 +13,7 @@ export default createGlobalStyle`
 
   h1 {
     margin: 0;
-    font-size: 18px;
+    font-size: ${props => props.theme.fonts.large};
     font-weight: 600;
   }
 `;
