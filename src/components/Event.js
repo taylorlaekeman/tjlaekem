@@ -6,12 +6,17 @@ const Article = styled.article`
   margin: 36px 0;
 `;
 
+const Header = styled.header`
+  display: grid;
+  grid-gap: 6px;
+`;
+
 const Event = ({ date, description, title }) => (
   <Article>
-    <header>
+    <Header>
       {date && <time>{date}</time>}
       <h2>{title}</h2>
-    </header>
+    </Header>
     {description && (
       <main>
         <p>{description}</p>
