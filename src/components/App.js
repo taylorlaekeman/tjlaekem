@@ -49,10 +49,7 @@ export default () => {
         date="August 28, 2015"
         title="Finished an internship with Metricwire as an Android Developer"
       />
-      <Event
-        date="May 4, 2015"
-        title="Started an internship with Metricwire"
-      />
+      <Event date="May 4, 2015" title="Started an internship with Metricwire" />
       <Event
         date="December 19, 2014"
         title="Finished an internship with CBTS Canada as a DevOps Developer"
