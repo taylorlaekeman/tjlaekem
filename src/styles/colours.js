@@ -8,6 +8,7 @@ const palette = {
 
 export default {
   background: palette.white,
+  timeline: palette.grey[800],
   text: palette.grey[900],
   textLight: palette.grey[800]
 };
