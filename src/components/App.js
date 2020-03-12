@@ -7,13 +7,14 @@ import theme from 'styles/theme';
 
 const Main = styled.main`
   position: relative;
+  margin-top: 40px;
 
   &:before {
     content: '';
     position: absolute;
-    left: 5px;
+    left: 6px;
     top: 12px;
-    bottom: 24px;
+    bottom: 80px;
     width: 2px;
     background-color: ${props => props.theme.colours.timeline};
   }

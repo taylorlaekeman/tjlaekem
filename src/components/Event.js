@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Article = styled.article`
-  margin: 36px 0;
+  margin-bottom: 60px;
 `;
 
 const Header = styled.header`
@@ -11,7 +11,7 @@ const Header = styled.header`
   grid-template-areas:
     '.    date '
     'icon title';
-  grid-template-columns: 13px 1fr;
+  grid-template-columns: 15px 1fr;
   grid-gap: 6px 18px;
 
   &:after {
@@ -20,7 +20,8 @@ const Header = styled.header`
     background-color: white;
     border: solid ${props => props.theme.colours.timeline} 2px;
     border-radius: 50%;
-    height: 13px;
+    margin-top: 3px;
+    height: 15px;
     z-index: 2;
     box-sizing: border-box;
   }
