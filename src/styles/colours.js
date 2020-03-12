@@ -6,5 +6,5 @@ const palette = {
 export default {
   background: palette.white,
   timeline: palette.grey,
-  text: palette.grey,
+  text: palette.grey
 };
