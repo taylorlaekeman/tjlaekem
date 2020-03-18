@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
+import { ReactComponent as UnstyledGithub } from 'assets/github.svg';
 import Event from 'components/Event';
 import Global from 'styles/Global';
 import theme from 'styles/theme';
@@ -22,6 +23,10 @@ const Article = styled.article`
 
 const Header = styled.header`
   grid-area: header;
+  display: grid;
+  grid-template-areas: 'name github';
+  grid-template-columns: 1fr min-content;
+  align-items: center;
 `;
 
 const Main = styled.main`
@@ -48,6 +53,12 @@ const Main = styled.main`
   }
 `;
 
+const Github = styled(UnstyledGithub)`
+  fill: ${props => props.theme.colours.icon};
+  height: 24px;
+  width: 24px;
+`;
+
 export default () => {
   return (
     <ThemeProvider theme={theme}>
@@ -55,6 +66,9 @@ export default () => {
       <Article>
         <Header>
           <h1>Taylor Laekeman</h1>
+          <a href="https://github.com/tjlaekem">
+            <Github />
+          </a>
         </Header>
         <Main>
           <Event title="Today" />
