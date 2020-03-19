@@ -105,11 +105,15 @@ export default () => {
           </a>
         </Header>
         <Main>
-          <Event title="Today" />
+          <Event
+            date="Today"
+            description="Canvass is building a machine-learning platform for the industrial manufacturing sector  that targets process experts instead of data scientists.  As a full-stack web developer, I participate in the design and implementation of features in both our front-end web application and our back-end stream-processing and machine learning pipelines. I'm also involved in the short- and long-term planning of my sprint team's objectives and the Canvass recruitment process."
+            technologies="React, Django, Postgres, Kafka, Kubeflow"
+            title="Work as a Full-stack Web Developer at Canvass Analytics"
+          />
           <Event
             date="August 20, 2018"
-            technologies="React, Django, Postgres, Kafka, Kubeflow"
-            title="Joined Canvass Analytics as a Full-stack Web Developer"
+            title="Joined Canvass Analytics"
           />
           <Event
             date="June 9, 2018"
