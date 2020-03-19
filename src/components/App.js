@@ -47,7 +47,7 @@ const Main = styled.main`
     content: '';
     position: absolute;
     left: 30px;
-    top: 36px;
+    top: 62px;
     bottom: 158px;
     width: 2px;
     background-color: ${props => props.theme.colours.timeline};
