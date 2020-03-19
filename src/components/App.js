@@ -108,6 +108,7 @@ export default () => {
           <Event title="Today" />
           <Event
             date="August 20, 2018"
+            technologies="React, Django, Postgres, Kafka, Kubeflow"
             title="Joined Canvass Analytics as a Full-stack Web Developer"
           />
           <Event
@@ -116,30 +117,37 @@ export default () => {
           />
           <Event
             date="December 22, 2017"
+            technologies="Knockout.js, ASP.NET"
             title="Finished a four-month internship with Fourwalls Digital as a Full-stack Web Developer"
           />
           <Event
             date="December 23, 2016"
+            technologies="ASP.NET"
             title="Finished a four-month internship with AbacusNext as Backend Web Developer"
           />
           <Event
             date="April 29, 2016"
+            technologies="React, Coffeescript, V8, Tornado"
             title="Finished a four-month internship with Enciricle as a Full-stack Web Developer"
           />
           <Event
             date="August 28, 2015"
+            technologies="Android"
             title="Finished a four-month internship with Metricwire as an Android Developer"
           />
           <Event
             date="December 19, 2014"
+            technologies="Puppet"
             title="Finished a four-month internship with CBTS Canada as a DevOps Developer"
           />
           <Event
             date="April 25, 2014"
+            technologies="C++"
             title="Finished a four-month internship with Cyclica as a Backend Web Developer"
           />
           <Event
             date="April 26, 2013"
+            technologies="Spring"
             title="Finished a four-month internship with Agriculture and Agri-Food Canada as a Backend Web Developer"
           />
         </Main>
