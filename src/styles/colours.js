@@ -5,6 +5,10 @@ const palette = {
 
 export default {
   background: palette.white,
+  footer: {
+    background: palette.grey,
+    text: palette.white
+  },
   icon: palette.grey,
   timeline: palette.grey,
   text: palette.grey

@@ -8,7 +8,6 @@ export default createGlobalStyle`
   body {
     background-color: ${props => props.theme.colours.background};
     color: ${props => props.theme.colours.text};
-    padding: 24px;
     font-family: 'Montserrat', sans-serif;
   }
 
