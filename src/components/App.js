@@ -6,6 +6,15 @@ import Event from 'components/Event';
 import Global from 'styles/Global';
 import theme from 'styles/theme';
 
+const responsivePadding = `
+  padding: 24px;
+
+  @media (min-width: 648px) {
+    padding-left: calc(50vw - 300px);
+    padding-right: calc(50vw - 300px);
+  }
+`;
+
 const Article = styled.article`
   display: grid;
   grid-template-areas:
@@ -20,12 +29,7 @@ const Header = styled.header`
   grid-template-areas: 'name github';
   grid-template-columns: 1fr min-content;
   align-items: center;
-  padding: 24px;
-
-  @media (min-width: 648px) {
-    padding-left: calc(50vw - 300px);
-    padding-right: calc(50vw - 300px);
-  }
+  ${responsivePadding}
 `;
 
 const Github = styled(UnstyledGithub)`
@@ -37,12 +41,7 @@ const Github = styled(UnstyledGithub)`
 const Main = styled.main`
   grid-area: content;
   position: relative;
-  padding: 24px;
-
-  @media (min-width: 648px) {
-    padding-left: calc(50vw - 300px);
-    padding-right: calc(50vw - 300px);
-  }
+  ${responsivePadding}
 
   &:before {
     content: '';
@@ -71,12 +70,7 @@ const Footer = styled.footer`
   grid-area: footer;
   background-color: ${props => props.theme.colours.footer.background};
   color: ${props => props.theme.colours.footer.text};
-  padding: 24px;
-
-  @media (min-width: 648px) {
-    padding-left: calc(50vw - 300px);
-    padding-right: calc(50vw - 300px);
-  }
+  ${responsivePadding}
 `;
 
 const List = styled.ul`
