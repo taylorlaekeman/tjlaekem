@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Article = styled.article`
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 `;
 
 const Header = styled.header`
@@ -12,7 +12,7 @@ const Header = styled.header`
     '.    date '
     'icon title';
   grid-template-columns: 15px 1fr;
-  grid-gap: 6px 18px;
+  grid-gap: 12px 18px;
 
   &:after {
     content: '';
@@ -35,16 +35,27 @@ const Time = styled.time`
   grid-area: date;
 `;
 
-const Event = ({ date, description, title }) => (
+const Details = styled.main`
+  margin-left: 33px;
+`;
+
+const Technologies = styled.p`
+  margin: 12px 0;
+  font-size: ${props => props.theme.fonts.small};
+  font-weight: 600;
+`;
+
+const Event = ({ date, description, technologies, title }) => (
   <Article>
     <Header>
       {date && <Time>{date}</Time>}
       <Title>{title}</Title>
     </Header>
-    {description && (
-      <main>
+    {(description || technologies) && (
+      <Details>
+        <Technologies>{technologies}</Technologies>
         <p>{description}</p>
-      </main>
+      </Details>
     )}
   </Article>
 );
@@ -52,12 +63,14 @@ const Event = ({ date, description, title }) => (
 Event.propTypes = {
   date: PropTypes.string,
   description: PropTypes.string,
+  technologies: PropTypes.string,
   title: PropTypes.string.isRequired
 };
 
 Event.defaultProps = {
   date: '',
-  description: ''
+  description: '',
+  technologies: ''
 };
 
 export default Event;
