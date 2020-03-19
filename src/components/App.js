@@ -6,19 +6,21 @@ import Event from 'components/Event';
 import Global from 'styles/Global';
 import theme from 'styles/theme';
 
+const responsivePadding = `
+  padding: 24px;
+
+  @media (min-width: 648px) {
+    padding-left: calc(50vw - 300px);
+    padding-right: calc(50vw - 300px);
+  }
+`;
+
 const Article = styled.article`
   display: grid;
   grid-template-areas:
     'header '
-    'content';
-  grid-template-columns: 1fr;
-
-  @media (min-width: 600px) {
-    grid-template-areas:
-      '. header  .'
-      '. content .';
-    grid-template-columns: 1fr 600px 1fr;
-  }
+    'content'
+    'footer ';
 `;
 
 const Header = styled.header`
@@ -27,36 +29,68 @@ const Header = styled.header`
   grid-template-areas: 'name github';
   grid-template-columns: 1fr min-content;
   align-items: center;
-`;
-
-const Main = styled.main`
-  grid-area: content;
-  position: relative;
-  margin-top: 40px;
-
-  &:before {
-    content: '';
-    position: absolute;
-    left: 6px;
-    top: 12px;
-    bottom: 134px;
-    width: 2px;
-    background-color: ${props => props.theme.colours.timeline};
-
-    @media (min-width: 391px) {
-      bottom: 120px;
-    }
-
-    @media (min-width: 546px) {
-      bottom: 100px;
-    }
-  }
+  ${responsivePadding}
 `;
 
 const Github = styled(UnstyledGithub)`
   fill: ${props => props.theme.colours.icon};
   height: 24px;
   width: 24px;
+`;
+
+const Main = styled.main`
+  grid-area: content;
+  position: relative;
+  ${responsivePadding}
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 36px;
+    bottom: 158px;
+    width: 2px;
+    background-color: ${props => props.theme.colours.timeline};
+
+    @media (min-width: 391px) {
+      bottom: 144px;
+    }
+
+    @media (min-width: 546px) {
+      bottom: 124px;
+    }
+
+    @media (min-width: 648px) {
+      left: calc(50vw - 300px + 6px);
+    }
+  }
+`;
+
+const Footer = styled.footer`
+  grid-area: footer;
+  background-color: ${props => props.theme.colours.footer.background};
+  color: ${props => props.theme.colours.footer.text};
+  ${responsivePadding}
+`;
+
+const List = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+const Item = styled.li`
+  padding: 2px;
+`;
+
+const Link = styled.a`
+  color: ${props => props.theme.colours.footer.text};
+  font-weight: 500;
+  font-size: 1.2rem;
+`;
+
+const Copyright = styled.p`
+  margin: 24px 0;
 `;
 
 export default () => {
@@ -141,6 +175,20 @@ export default () => {
             title="Started a Bachelor of Applied Science in Computer Engineering at the University of Waterloo"
           />
         </Main>
+        <Footer>
+          <List>
+            <Item>
+              <Link href="https://github.com/tjlaekem">GitHub</Link>
+            </Item>
+            <Item>
+              <Link href="https://www.linkedin.com/in/tjlaekem/">LinkedIn</Link>
+            </Item>
+          </List>
+          <Copyright>
+            &copy;
+            {` ${new Date(Date.now()).getFullYear()} Taylor Laekeman`}
+          </Copyright>
+        </Footer>
       </Article>
     </ThemeProvider>
   );
