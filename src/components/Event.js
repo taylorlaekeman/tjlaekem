@@ -64,7 +64,7 @@ Event.propTypes = {
   date: PropTypes.string,
   description: PropTypes.string,
   technologies: PropTypes.string,
-  title: PropTypes.string.isRequired
+  title: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired
 };
 
 Event.defaultProps = {
