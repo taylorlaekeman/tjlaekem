@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 
+import { ReactComponent as UnstyledEnvelope } from 'assets/envelope.svg';
 import { ReactComponent as UnstyledGithub } from 'assets/github.svg';
 import Event from 'components/Event';
 import Global from 'styles/Global';
@@ -26,13 +27,22 @@ const Article = styled.article`
 const Header = styled.header`
   grid-area: header;
   display: grid;
-  grid-template-areas: 'name github';
-  grid-template-columns: 1fr min-content;
+  grid-template-areas: 'name envelope github';
+  grid-template-columns: 1fr min-content min-content;
+  grid-gap: 12px;
   align-items: center;
   ${responsivePadding}
 `;
 
+const Envelope = styled(UnstyledEnvelope)`
+  grid-area: envelope;
+  fill: ${props => props.theme.colours.icon};
+  height: 20px;
+  width: 20px;
+`;
+
 const Github = styled(UnstyledGithub)`
+  grid-area: github;
   fill: ${props => props.theme.colours.icon};
   height: 24px;
   width: 24px;
@@ -143,6 +153,9 @@ export default () => {
       <Article>
         <Header>
           <h1>Taylor Laekeman</h1>
+          <a href="mailto:taylor.laekeman@gmail.com">
+            <Envelope />
+          </a>
           <a href="https://github.com/tjlaekem">
             <Github />
           </a>
@@ -231,6 +244,9 @@ export default () => {
         </Main>
         <Footer>
           <List>
+            <Item>
+              <Link href="mailto:taylor.laekeman@gmail.com">Email</Link>
+            </Item>
             <Item>
               <Link href="https://github.com/tjlaekem">GitHub</Link>
             </Item>
