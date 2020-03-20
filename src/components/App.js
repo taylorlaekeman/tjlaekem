@@ -48,16 +48,32 @@ const Main = styled.main`
     position: absolute;
     left: 30px;
     top: 62px;
-    bottom: 158px;
+    bottom: 360px;
     width: 2px;
     background-color: ${props => props.theme.colours.timeline};
 
-    @media (min-width: 391px) {
-      bottom: 144px;
+    @media (min-width: 374px) {
+      bottom: 342px;
     }
 
-    @media (min-width: 546px) {
-      bottom: 124px;
+    @media (min-width: 403px) {
+      bottom: 320px;
+    }
+
+    @media (min-width: 422px) {
+      bottom: 302px;
+    }
+
+    @media (min-width: 442px) {
+      bottom: 280px;
+    }
+
+    @media (min-width: 503px) {
+      bottom: 262px;
+    }
+
+    @media (min-width: 636px) {
+      bottom: 244px;
     }
 
     @media (min-width: 648px) {
