@@ -19,12 +19,11 @@ export default createGlobalStyle`
   h2 {
     margin: 0;
     font-size: ${props => props.theme.fonts.large};
-    font-weight: 500;
   }
 
   time {
     font-size: ${props => props.theme.fonts.small};
-    font-weight: 600;
+    font-weight: 400;
   }
 
   p {

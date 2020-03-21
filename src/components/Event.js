@@ -10,9 +10,10 @@ const Header = styled.header`
   display: grid;
   grid-template-areas:
     '.    date '
-    'icon title';
+    'icon title'
+    '.    tech ';
   grid-template-columns: 15px 1fr;
-  grid-gap: 12px 18px;
+  grid-column-gap: 18px;
 
   &:after {
     content: '';
@@ -29,20 +30,24 @@ const Header = styled.header`
 
 const Title = styled.h2`
   grid-area: title;
+  font-weight: 600;
+  margin-top: 6px;
+  margin-bottom: 4px;
 `;
 
 const Time = styled.time`
   grid-area: date;
 `;
 
-const Details = styled.main`
-  margin-left: 33px;
-`;
-
 const Technologies = styled.p`
-  margin: 12px 0;
+  grid-area: tech;
   font-size: ${props => props.theme.fonts.small};
   font-weight: 600;
+`;
+
+const Description = styled.p`
+  margin-left: 33px;
+  margin-top: 18px;
 `;
 
 const Event = ({ date, description, technologies, title }) => (
@@ -50,13 +55,9 @@ const Event = ({ date, description, technologies, title }) => (
     <Header>
       {date && <Time>{date}</Time>}
       <Title>{title}</Title>
+      {technologies && <Technologies>{technologies}</Technologies>}
     </Header>
-    {(description || technologies) && (
-      <Details>
-        <Technologies>{technologies}</Technologies>
-        <p>{description}</p>
-      </Details>
-    )}
+    {description && <Description>{description}</Description>}
   </Article>
 );
 

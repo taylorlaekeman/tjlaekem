@@ -57,33 +57,33 @@ const Main = styled.main`
     content: '';
     position: absolute;
     left: 30px;
-    top: 62px;
-    bottom: 360px;
+    top: 50px;
+    bottom: 376px;
     width: 2px;
     background-color: ${props => props.theme.colours.timeline};
 
     @media (min-width: 374px) {
-      bottom: 342px;
+      bottom: 358px;
     }
 
-    @media (min-width: 403px) {
-      bottom: 320px;
+    @media (min-width: 408px) {
+      bottom: 336px;
     }
 
     @media (min-width: 422px) {
-      bottom: 302px;
+      bottom: 318px;
     }
 
-    @media (min-width: 442px) {
-      bottom: 280px;
+    @media (min-width: 448px) {
+      bottom: 296px;
     }
 
     @media (min-width: 503px) {
-      bottom: 262px;
+      bottom: 278px;
     }
 
     @media (min-width: 636px) {
-      bottom: 244px;
+      bottom: 260px;
     }
 
     @media (min-width: 648px) {
