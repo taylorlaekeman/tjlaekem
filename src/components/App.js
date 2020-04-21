@@ -153,7 +153,7 @@ export default () => {
       <Article>
         <Header>
           <h1>Taylor Laekeman</h1>
-          <a href="mailto:taylor.laekeman@gmail.com">
+          <a href="mailto:hello@tjlaekem.dev">
             <Envelope />
           </a>
           <a href="https://github.com/tjlaekem">
@@ -245,7 +245,7 @@ export default () => {
         <Footer>
           <List>
             <Item>
-              <Link href="mailto:taylor.laekeman@gmail.com">Email</Link>
+              <Link href="mailto:hello@tjlaekem.dev">Email</Link>
             </Item>
             <Item>
               <Link href="https://github.com/tjlaekem">GitHub</Link>
