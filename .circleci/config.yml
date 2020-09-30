@@ -41,7 +41,7 @@ jobs:
             - build
 
   deploy:
-    executor: docker
+    executor: deployer
     steps:
       - checkout
       - attach_workspace:
