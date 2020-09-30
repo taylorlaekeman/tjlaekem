@@ -3,5 +3,5 @@ import fonts from 'styles/fonts';
 
 export default {
   colours,
-  fonts
+  fonts,
 };

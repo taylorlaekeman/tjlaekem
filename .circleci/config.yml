@@ -1,8 +1,17 @@
-version: 2
+version: 2.1
+
+executors:
+  node:
+    docker:
+      - image: circleci/node:13.13.0
+
+  deployer:
+    docker:
+      - image: google/cloud-sdk
+
 jobs:
   install:
-    docker:
-      - image: circleci/node:12.2.0
+    executor: node
     steps:
       - checkout
       - run: make install
@@ -12,8 +21,7 @@ jobs:
             - node_modules
 
   lint:
-    docker:
-      - image: circleci/node:12.2.0
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -21,8 +29,7 @@ jobs:
       - run: make lint
 
   build:
-    docker:
-      - image: circleci/node:12.2.0
+    executor: node
     steps:
       - checkout
       - attach_workspace:
@@ -34,8 +41,7 @@ jobs:
             - build
 
   deploy:
-    docker:
-      - image: google/cloud-sdk
+    executor: deployer
     steps:
       - checkout
       - attach_workspace:
