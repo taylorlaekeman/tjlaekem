@@ -193,7 +193,10 @@ export default () => {
                   technologies="Flask, Postgres"
                   title={CiaoEstrelaTitle}
                 />
-                <Event date="August 20, 2018" title="Joined Canvass Analytics" />
+                <Event
+                  date="August 20, 2018"
+                  title="Joined Canvass Analytics"
+                />
                 <Event
                   date="June 9, 2018"
                   title="Graduated from the University of Waterloo with a Bachelor of Applied Science in Computer Engineering"
