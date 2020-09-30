@@ -36,14 +36,14 @@ const Header = styled.header`
 
 const Envelope = styled(UnstyledEnvelope)`
   grid-area: envelope;
-  fill: ${props => props.theme.colours.icon};
+  fill: ${(props) => props.theme.colours.icon};
   height: 20px;
   width: 20px;
 `;
 
 const Github = styled(UnstyledGithub)`
   grid-area: github;
-  fill: ${props => props.theme.colours.icon};
+  fill: ${(props) => props.theme.colours.icon};
   height: 24px;
   width: 24px;
 `;
@@ -60,7 +60,7 @@ const Main = styled.main`
     top: 50px;
     bottom: 376px;
     width: 2px;
-    background-color: ${props => props.theme.colours.timeline};
+    background-color: ${(props) => props.theme.colours.timeline};
 
     @media (min-width: 374px) {
       bottom: 358px;
@@ -94,8 +94,8 @@ const Main = styled.main`
 
 const Footer = styled.footer`
   grid-area: footer;
-  background-color: ${props => props.theme.colours.footer.background};
-  color: ${props => props.theme.colours.footer.text};
+  background-color: ${(props) => props.theme.colours.footer.background};
+  color: ${(props) => props.theme.colours.footer.text};
   ${responsivePadding}
 `;
 
@@ -109,18 +109,18 @@ const Item = styled.li`
   padding: 2px;
 `;
 
-const getLinkStyles = props => `
+const getLinkStyles = (props) => `
   color: ${props.theme.colours.text};
 `;
 
-const getPlainLinkStyles = props => `
+const getPlainLinkStyles = (props) => `
   color: ${props.theme.colours.footer.text};
   font-weight: 500;
   font-size: 1.2rem;
 `;
 
 const Link = styled.a`
-  ${props => (props.plain ? getLinkStyles(props) : getPlainLinkStyles(props))}
+  ${(props) => (props.plain ? getLinkStyles(props) : getPlainLinkStyles(props))}
 `;
 
 const Copyright = styled.p`
