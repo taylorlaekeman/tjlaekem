@@ -1,10 +1,10 @@
-.PHONY: build, install, lint, lint-fix
+.PHONY: build install lint lint-fix run
 
 install:
 	npm install
 
 build:
-	npm run build
+	CI=false npm run build
 
 run:
 	npm start
