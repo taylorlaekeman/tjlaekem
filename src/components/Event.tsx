@@ -50,7 +50,7 @@ const Description = styled.p`
   margin-top: 18px;
 `;
 
-const Event = ({ date, description, technologies, title }) => (
+const Event = ({ date, description, technologies, title }: propTypes) => (
   <Article>
     <Header>
       {date && <Time>{date}</Time>}
@@ -60,6 +60,13 @@ const Event = ({ date, description, technologies, title }) => (
     {description && <Description>{description}</Description>}
   </Article>
 );
+
+type propTypes = {
+  date: string;
+  description: string;
+  technologies: string;
+  title: string;
+};
 
 Event.propTypes = {
   date: PropTypes.string,
