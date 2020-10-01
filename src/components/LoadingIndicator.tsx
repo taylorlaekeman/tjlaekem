@@ -1,10 +1,14 @@
-import PropTypes from 'prop-types';
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 import { ReactComponent as UnstyledCog } from 'assets/cog.svg';
 
-const LoadingIndicator = ({ area = '', centered = false, className = '', large = false }: propTypes) => {
+const LoadingIndicator: FunctionComponent<propTypes> = ({
+  area = '',
+  centered = false,
+  className = '',
+  large = false,
+}: propTypes) => {
   if (centered)
     return (
       <Wrapper $area={area} className={className}>
