@@ -1,46 +1,76 @@
 {
-    "env": {
-      "browser": true,
-      "es6": true
-    },
-    "extends": [
-      "airbnb",
-      "prettier"
-    ],
-    "globals": {
-      "Atomics": "readonly",
-      "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-      "ecmaFeatures": {
-          "jsx": true
-      },
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "paths": ["src"]
-        }
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "overrides": [
+    {
+      "files": ["src/state/*"],
+      "rules": {
+        "import/no-cycle": "off"
       }
     },
-    "plugins": [
-      "react",
-      "prettier"
-    ],
-    "rules": {
-      "react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
-      "no-use-before-define": "off",
-      "prettier/prettier": "error"
+    {
+      "files": ["src/serviceWorker.ts"],
+      "rules": {
+        "no-console": "off",
+        "no-param-reassign": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+      }
+    }
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "overrides": [
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier",
+    "react",
+    "react-hooks",
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
       {
-        "files": ["src/serviceWorker.js"],
-        "rules": {
-          "no-console": "off",
-          "no-param-reassign": "off"
-        }
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
       }
-    ]
+    ],
+    "no-use-before-define": "off",
+    "prettier/prettier": "error",
+    "react/button-has-type": "off",
+    "react/jsx-filename-extension": [1, {"extensions": [".ts", ".tsx"]}],
+    "react/jsx-curly-newline": "off",
+    "react-hooks/exhaustive-deps": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "paths": ["src/"]
+      }
+    }
+  }
 }

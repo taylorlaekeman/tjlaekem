@@ -1,4 +1,9 @@
-const getEvents = () => {
+const getEvents = (): {
+  date: string;
+  description: string;
+  technologies: string;
+  title: string;
+}[] => {
   return [
     {
       date: 'Today',

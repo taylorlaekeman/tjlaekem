@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Document, Page as UnstyledPage } from 'react-pdf';
 import styled from 'styled-components';
 
 import LoadingIndicator from 'components/LoadingIndicator';
 
-const Resume = () => (
+const Resume: FunctionComponent = () => (
   <Wrapper>
     <Document file="./resume.pdf" loading={<LoadingIndicator />}>
       <Page pageNumber={1} />

@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 import Event from 'components/Event';
 import getEvents from 'content/events';
 
-const Home = () => (
+const Home: FunctionComponent = () => (
   <Main>
     {getEvents().map((event) => (
       <Event

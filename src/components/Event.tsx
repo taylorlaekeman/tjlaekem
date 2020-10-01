@@ -1,6 +1,28 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
+
+const Event: FunctionComponent<propTypes> = ({
+  date,
+  description,
+  technologies,
+  title,
+}: propTypes) => (
+  <Article>
+    <Header>
+      {date && <Time>{date}</Time>}
+      <Title>{title}</Title>
+      {technologies && <Technologies>{technologies}</Technologies>}
+    </Header>
+    {description && <Description>{description}</Description>}
+  </Article>
+);
+
+type propTypes = {
+  date: string;
+  description: string;
+  technologies: string;
+  title: string;
+};
 
 const Article = styled.article`
   margin-bottom: 100px;
@@ -49,29 +71,5 @@ const Description = styled.p`
   margin-left: 33px;
   margin-top: 18px;
 `;
-
-const Event = ({ date, description, technologies, title }) => (
-  <Article>
-    <Header>
-      {date && <Time>{date}</Time>}
-      <Title>{title}</Title>
-      {technologies && <Technologies>{technologies}</Technologies>}
-    </Header>
-    {description && <Description>{description}</Description>}
-  </Article>
-);
-
-Event.propTypes = {
-  date: PropTypes.string,
-  description: PropTypes.string,
-  technologies: PropTypes.string,
-  title: PropTypes.oneOfType([PropTypes.element, PropTypes.string]).isRequired,
-};
-
-Event.defaultProps = {
-  date: '',
-  description: '',
-  technologies: '',
-};
 
 export default Event;
