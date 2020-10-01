@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { ReactComponent as UnstyledCog } from 'assets/cog.svg';
 
-const LoadingIndicator = ({ area, centered, className, large }: propTypes) => {
+const LoadingIndicator = ({ area = '', centered = false, className = '', large = false }: propTypes) => {
   if (centered)
     return (
       <Wrapper $area={area} className={className}>
@@ -16,10 +16,10 @@ const LoadingIndicator = ({ area, centered, className, large }: propTypes) => {
 };
 
 type propTypes = {
-  area: string;
-  centered: boolean;
-  className: string;
-  large: boolean;
+  area?: string;
+  centered?: boolean;
+  className?: string;
+  large?: boolean;
 };
 
 const Wrapper = styled.div<{ $area: string }>`
