@@ -35,7 +35,7 @@ const ColourPalette: FunctionComponent<propTypes> = ({
 );
 
 export type propTypes = {
-  palette: string;
+  palette: 'neutral';
 };
 
 const Wrapper = styled.div`
@@ -77,6 +77,8 @@ const TextTile = styled.div<{
   color: ${({ $textPalette, $textShade, theme }) =>
     theme.colours[$textPalette][$textShade]};
   display: flex;
+  font-family: ${({ theme }) => theme.font};
+  font-size: 0.8rem;
   justify-content: center;
 
   &:nth-child(91) {
