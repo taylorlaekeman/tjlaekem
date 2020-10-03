@@ -37,6 +37,7 @@ const Wrapper = styled.li`
 const Text = styled.p<{ $isCurrent: boolean }>`
   color: ${({ $isCurrent, theme }) => $isCurrent ? theme.colours.text : theme.colours.neutral[700]};
   font-family: ${({ theme }) => theme.font};
+  font-size: 1rem;
   margin: 0;
   max-width: 90%;
   overflow: hidden;
