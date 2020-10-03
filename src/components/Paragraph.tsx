@@ -1,11 +1,13 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const Paragraph: FunctionComponent<propTypes> = ({ children }: propTypes) => (
-  <Text>{children}</Text>
-);
+const Paragraph: FunctionComponent<propTypes> = ({
+  area = '',
+  children,
+}: propTypes) => <Text $area={area}>{children}</Text>;
 
 export type propTypes = {
+  area?: string;
   children: string;
 };
 
@@ -14,6 +16,7 @@ const Text = styled.p`
   font-family: ${({ theme }) => theme.font};
   font-size: 0.9rem;
   font-weight: 400;
+  grid-area: ${({ $area }) => $area};
   margin: 0;
   padding: 0;
 

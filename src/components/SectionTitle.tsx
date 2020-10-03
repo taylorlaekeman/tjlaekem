@@ -2,18 +2,21 @@ import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const SectionTitle: FunctionComponent<propTypes> = ({
+  area = '',
   children,
-}: propTypes) => <Text>{children}</Text>;
+}: propTypes) => <Text $area={area}>{children}</Text>;
 
 export type propTypes = {
+  area?: string;
   children: string;
 };
 
-const Text = styled.h2`
+const Text = styled.h2<{ $area: string }>`
   color: ${({ theme }) => theme.colours.text};
   font-family: ${({ theme }) => theme.font};
   font-size: 1.6rem;
   font-weight: 600;
+  grid-area: ${({ $area }) => $area};
   margin: 0;
   padding: 0;
 
