@@ -35,7 +35,7 @@ const ColourPalette: FunctionComponent<propTypes> = ({
 );
 
 export type propTypes = {
-  palette: string;
+  palette: 'neutral';
 };
 
 const Wrapper = styled.div`
