@@ -4,11 +4,12 @@ import styled from 'styled-components';
 const ColourPalette: FunctionComponent = ({ palette }: propTypes) => (
   <Wrapper>
     {SHADES.map((shade) => (
-      <ColourTile $palette={palette} $shade={shade} />
+      <ColourTile key={shade} $palette={palette} $shade={shade} />
     ))}
     {SHADES.map((shade) => (
       <TextTile
         $backgroundPalette="white"
+        key={shade}
         $textPalette={palette}
         $textShade={shade}
       >
@@ -19,6 +20,7 @@ const ColourPalette: FunctionComponent = ({ palette }: propTypes) => (
       <TextTile
         $backgroundPalette={palette}
         $backgroundShade={backgroundShade}
+        key={`${textShade}-${backgroundShade}`}
         $textPalette={palette}
         $textShade={textShade}
       >
