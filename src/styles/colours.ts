@@ -23,5 +23,5 @@ export default {
   },
   icon: palette.grey,
   timeline: palette.grey,
-  text: palette.grey,
+  text: palette.neutral[900],
 };
