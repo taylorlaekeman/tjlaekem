@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import ColourPalette, { propTypes } from 'components/ColourPalette';
 
 export default {
-  title: 'ColourPalette',
+  title: 'Colours/Palette',
   component: ColourPalette,
   argTypes: {},
 } as Meta;
