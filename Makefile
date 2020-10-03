@@ -3,8 +3,11 @@
 install:
 	npm install
 
-build:
+build-app:
 	CI=false npm run build
+
+build-storybook:
+	CI=false npm run build-storybook -o storybook
 
 run:
 	npm start
