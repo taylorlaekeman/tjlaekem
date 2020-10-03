@@ -1,4 +1,4 @@
-import React, { FunctionComponent, ReactNode } from 'react';
+import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const NavItem: FunctionComponent<propTypes> = ({
@@ -46,7 +46,8 @@ const Link = styled.a`
 `;
 
 const Text = styled.p<{ $isCurrent: boolean }>`
-  color: ${({ $isCurrent, theme }) => $isCurrent ? theme.colours.text : theme.colours.neutral[700]};
+  color: ${({ $isCurrent, theme }) =>
+    $isCurrent ? theme.colours.text : theme.colours.neutral[700]};
   font-family: ${({ theme }) => theme.font};
   font-size: 1rem;
   margin: 0;
@@ -58,7 +59,8 @@ const Text = styled.p<{ $isCurrent: boolean }>`
 `;
 
 const Bar = styled.div<{ $isCurrent }>`
-  background-color: ${({ $isCurrent, theme }) => $isCurrent ? theme.colours.neutral[700] : theme.colours.neutral[500]};
+  background-color: ${({ $isCurrent, theme }) =>
+    $isCurrent ? theme.colours.neutral[700] : theme.colours.neutral[500]};
   border-radius: 2px;
   margin: -6px 0;
   width: 4px;
