@@ -21,11 +21,15 @@ export type propTypes = {
 };
 
 const Wrapper = styled.li`
+  border-radius: 2px;
   list-style-type: none;
   max-width: 200px;
-  padding: 8px 0;
+  padding: 8px 2px;
+  padding-left: 8px;
 
   &:hover {
+    background-color: ${({ theme }) => theme.colours.neutral[100]};
+
     p {
       color: ${({ theme }) => theme.colours.text};
     }
