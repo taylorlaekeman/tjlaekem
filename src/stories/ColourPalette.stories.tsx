@@ -13,5 +13,5 @@ const Template: Story<propTypes> = (args) => <ColourPalette {...args} />;
 
 export const Neutral = Template.bind();
 Neutral.args = {
-  palette: 'neutral'
+  palette: 'neutral',
 };
