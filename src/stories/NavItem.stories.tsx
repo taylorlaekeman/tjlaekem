@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 import NavItem, { propTypes } from 'components/NavItem';
 
 export default {
-  title: 'NavItem',
+  title: 'Nav/NavItem',
   component: NavItem,
   argTypes: {},
 } as Meta;
