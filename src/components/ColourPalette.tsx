@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const ColourPalette: FunctionComponent = ({ palette }: propTypes) => (
+const ColourPalette: FunctionComponent<propTypes> = ({ palette }: propTypes) => (
   <Wrapper>
     {SHADES.map((shade) => (
       <ColourTile key={shade} $palette={palette} $shade={shade} />
@@ -33,7 +33,7 @@ const ColourPalette: FunctionComponent = ({ palette }: propTypes) => (
 );
 
 export type propTypes = {
-  palette?: string;
+  palette: string;
 };
 
 const Wrapper = styled.div`
@@ -62,8 +62,9 @@ const ColourTile = styled.div<{ $palette: string; $shade: string }>`
 const SHADES = ['100', '200', '300', '400', '500', '600', '700', '800', '900'];
 
 const TextTile = styled.div<{
-  $backgroundShade: string;
-  $palette: string;
+  $backgroundPalette: string;
+  $backgroundShade?: string;
+  $textPalette: string;
   $textShade: string;
 }>`
   align-items: center;
