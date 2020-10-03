@@ -58,7 +58,7 @@ const Text = styled.p<{ $isCurrent: boolean }>`
   white-space: nowrap;
 `;
 
-const Bar = styled.div<{ $isCurrent }>`
+const Bar = styled.div<{ $isCurrent: boolean }>`
   background-color: ${({ $isCurrent, theme }) =>
     $isCurrent ? theme.colours.neutral[700] : theme.colours.neutral[500]};
   border-radius: 2px;
