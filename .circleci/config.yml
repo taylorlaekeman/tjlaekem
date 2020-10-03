@@ -97,3 +97,6 @@ workflows:
           requires:
             - lint
             - build-storybook
+          filters:
+            branches:
+              only: master
