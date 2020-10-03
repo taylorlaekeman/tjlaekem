@@ -1,7 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const ColourPalette: FunctionComponent<propTypes> = ({ palette }: propTypes) => (
+const ColourPalette: FunctionComponent<propTypes> = ({
+  palette,
+}: propTypes) => (
   <Wrapper>
     {SHADES.map((shade) => (
       <ColourTile key={shade} $palette={palette} $shade={shade} />
