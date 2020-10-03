@@ -4,6 +4,7 @@ import responsivePadding from 'styles/responsivePadding';
 
 export default {
   colours,
+  font: "'Montserrat', sans-serif;",
   fonts,
   responsivePadding,
 };
