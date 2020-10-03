@@ -94,6 +94,6 @@ workflows:
             branches:
               only: master
       - deploy-storybook:
-          required:
+          requires:
             - lint
             - build-storybook
