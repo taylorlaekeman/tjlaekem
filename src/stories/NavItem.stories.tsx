@@ -16,3 +16,9 @@ Normal.args = {
   children: 'Projects',
   isCurrent: false,
 };
+
+export const Current = Template.bind({});
+Current.args = {
+  children: 'Projects',
+  isCurrent: true,
+};
