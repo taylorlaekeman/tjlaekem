@@ -4,21 +4,23 @@ import styled from 'styled-components';
 const NavItem: FunctionComponent<propTypes> = ({
   children,
   isCurrent = false,
+  to = '',
 }: propTypes) => (
   <Wrapper>
-    <Text $isCurrent={isCurrent}>{children}</Text>
-    <Bar $isCurrent={isCurrent} />
+    <Link href={to && `#${to}`}>
+      <Text $isCurrent={isCurrent}>{children}</Text>
+      <Bar $isCurrent={isCurrent} />
+    </Link>
   </Wrapper>
 );
 
 export type propTypes = {
   children: string;
   isCurrent?: boolean;
+  to?: string;
 };
 
 const Wrapper = styled.li`
-  display: flex;
-  justify-content: space-between;
   list-style-type: none;
   max-width: 200px;
   padding: 8px 0;
@@ -32,6 +34,15 @@ const Wrapper = styled.li`
       background-color: ${({ theme }) => theme.colours.neutral[700]};
     }
   }
+`;
+
+const Link = styled.a`
+  appearance: none;
+  cursor: default;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 100%;
 `;
 
 const Text = styled.p<{ $isCurrent: boolean }>`
