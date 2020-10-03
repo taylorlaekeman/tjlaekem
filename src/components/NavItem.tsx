@@ -5,8 +5,8 @@ const NavItem: FunctionComponent<propTypes> = ({
   children,
   isCurrent = false,
 }: propTypes) => (
-  <Wrapper $isCurrent={isCurrent}>
-    {children}
+  <Wrapper>
+    <Text $isCurrent={isCurrent}>{children}</Text>
     <Bar $isCurrent={isCurrent} />
   </Wrapper>
 );
@@ -16,22 +16,33 @@ export type propTypes = {
   isCurrent?: boolean;
 };
 
-const Wrapper = styled.li<{ $isCurrent: boolean }>`
-  color: ${({ $isCurrent, theme }) => $isCurrent ? theme.colours.text : theme.colours.neutral[700]};
+const Wrapper = styled.li`
   display: flex;
-  font-family: ${({ theme }) => theme.font};
   justify-content: space-between;
   list-style-type: none;
   max-width: 200px;
   padding: 8px 0;
 
   &:hover {
-    color: ${({ theme }) => theme.colours.text};
+    p {
+      color: ${({ theme }) => theme.colours.text};
+    }
 
     div {
       background-color: ${({ theme }) => theme.colours.neutral[700]};
     }
   }
+`;
+
+const Text = styled.p<{ $isCurrent: boolean }>`
+  color: ${({ $isCurrent, theme }) => $isCurrent ? theme.colours.text : theme.colours.neutral[700]};
+  font-family: ${({ theme }) => theme.font};
+  margin: 0;
+  max-width: 90%;
+  overflow: hidden;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 `;
 
 const Bar = styled.div<{ $isCurrent }>`
