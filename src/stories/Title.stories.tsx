@@ -13,5 +13,5 @@ const Template: Story<propTypes> = (args) => <Title {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
-  children: 'test',
+  children: 'Projects',
 };
