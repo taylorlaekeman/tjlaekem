@@ -17,7 +17,9 @@ Normal.args = {
   children: (
     <>
       <Link to="https://rudder.to">visit site</Link>
-      <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">view the code</Link>
+      <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+        view the code
+      </Link>
     </>
   ),
 };

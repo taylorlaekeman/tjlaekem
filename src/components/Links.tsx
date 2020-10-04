@@ -6,7 +6,7 @@ const Links: FunctionComponent<propTypes> = ({ children }: propTypes) => (
 );
 
 export type propTypes = {
-  children: ReactNode,
+  children: ReactNode;
 };
 
 const Wrapper = styled.nav`
