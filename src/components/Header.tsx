@@ -8,8 +8,12 @@ const Header: FunctionComponent<propTypes> = ({ children }: propTypes) => (
   <Wrapper>
     <h1>{children}</h1>
     <Socials>
-      <IconLink href="https://github.com/tjlaekem"><Github /></IconLink>
-      <IconLink href="https://linkedin.com/in/tjlaekem"><Linkedin /></IconLink>
+      <IconLink href="https://github.com/tjlaekem">
+        <Github />
+      </IconLink>
+      <IconLink href="https://linkedin.com/in/tjlaekem">
+        <Linkedin />
+      </IconLink>
     </Socials>
   </Wrapper>
 );
