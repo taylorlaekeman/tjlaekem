@@ -11,7 +11,7 @@ export type propTypes = {
   isFlipped?: boolean;
 };
 
-const Wrapper = styled.section`
+const Wrapper = styled.section<{ $isFlipped: boolean }>`
   display: grid;
   grid-gap: 40px 60px;
   grid-template-areas: ${({ $isFlipped }) =>

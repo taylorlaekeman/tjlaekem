@@ -11,7 +11,7 @@ export type propTypes = {
   children: string;
 };
 
-const Text = styled.p`
+const Text = styled.p<{ $area: string }>`
   color: ${({ theme }) => theme.colours.text};
   font-family: ${({ theme }) => theme.font};
   font-size: 0.9rem;
