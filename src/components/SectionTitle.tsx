@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const Paragraph: FunctionComponent<propTypes> = ({
+const SectionTitle: FunctionComponent<propTypes> = ({
   area = '',
   children,
 }: propTypes) => <Text $area={area}>{children}</Text>;
@@ -11,27 +11,22 @@ export type propTypes = {
   children: string;
 };
 
-const Text = styled.p<{ $area: string }>`
+const Text = styled.h2<{ $area: string }>`
   color: ${({ theme }) => theme.colours.text};
   font-family: ${({ theme }) => theme.font};
-  font-size: 0.9rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 600;
   grid-area: ${({ $area }) => $area};
   margin: 0;
   padding: 0;
 
-  @media (min-width: 400px) {
-    max-width: 400px;
-  }
-
   @media (min-width: 800px) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   @media (min-width: 1400px) {
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 3rem;
   }
 `;
 
-export default Paragraph;
+export default SectionTitle;

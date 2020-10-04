@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-const Title: FunctionComponent<propTypes> = ({ children }: propTypes) => (
-  <Text>{children}</Text>
-);
+const CategoryTitle: FunctionComponent<propTypes> = ({
+  children,
+}: propTypes) => <Text>{children}</Text>;
 
 export type propTypes = {
   children: string;
@@ -26,4 +26,4 @@ const Text = styled.h2`
   }
 `;
 
-export default Title;
+export default CategoryTitle;

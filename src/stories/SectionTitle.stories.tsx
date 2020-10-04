@@ -1,15 +1,15 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Title, { propTypes } from 'components/Title';
+import SectionTitle, { propTypes } from 'components/SectionTitle';
 
 export default {
-  title: 'Text/Title',
-  component: Title,
+  title: 'Text/SectionTitle',
+  component: SectionTitle,
   argTypes: {},
 } as Meta;
 
-const Template: Story<propTypes> = (args) => <Title {...args} />;
+const Template: Story<propTypes> = (args) => <SectionTitle {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {
