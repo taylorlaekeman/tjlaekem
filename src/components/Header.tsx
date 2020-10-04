@@ -26,6 +26,8 @@ const Wrapper = styled.header`
   align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
 `;
 
 const Socials = styled.nav`
