@@ -18,11 +18,13 @@ const Wrapper = styled.section<{ $isFlipped: boolean }>`
     $isFlipped
       ? `
     'title       image'
-    'description image';
+    'description image'
+    'links       image';
   `
       : `
     'image title      '
-    'image description';
+    'image description'
+    'image links      ';
   `}
   grid-template-columns: 1fr 1fr;
   max-width: 800px;

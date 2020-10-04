@@ -3,12 +3,14 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 
 import RudderLogo from 'assets/rudder-logo.png';
 import Image from 'components/Image';
+import Links from 'components/Links';
+import Link from 'components/NewLink';
 import Section, { propTypes } from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
 import Paragraph from 'components/Paragraph';
 
 export default {
-  title: 'Section',
+  title: 'Section/Section',
   component: Section,
   argTypes: {},
 } as Meta;
@@ -29,6 +31,12 @@ Normal.args = {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </Paragraph>
+      <Links>
+        <Link to="https://rudder.to">rudder.to</Link>
+        <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+          view the code
+        </Link>
+      </Links>
       <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
@@ -48,6 +56,12 @@ Flipped.args = {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </Paragraph>
+      <Links>
+        <Link to="https://rudder.to">rudder.to</Link>
+        <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+          view the code
+        </Link>
+      </Links>
       <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
