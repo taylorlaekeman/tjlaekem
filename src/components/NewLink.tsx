@@ -4,12 +4,10 @@ import styled from 'styled-components';
 const Link: FunctionComponent<propTypes> = ({
   children,
   to,
-  type = 'default'
+  type = 'default',
 }: propTypes) => {
   const InnerLink = getInnerLink(type);
-  return (
-    <InnerLink href={to}>{children}</InnerLink>
-  );
+  return <InnerLink href={to}>{children}</InnerLink>;
 };
 
 export type propTypes = {
@@ -19,7 +17,7 @@ export type propTypes = {
 };
 
 const getInnerLink = (type: string) => {
-  switch(type) {
+  switch (type) {
     case 'button':
       return ButtonLink;
     case 'plain':

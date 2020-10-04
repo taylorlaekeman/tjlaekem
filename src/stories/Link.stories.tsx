@@ -21,7 +21,7 @@ export const Plain = Template.bind({});
 Plain.args = {
   children: 'visit website',
   to: 'rudder.to',
-  type: 'plain'
+  type: 'plain',
 };
 
 export const Button = Template.bind({});
