@@ -25,6 +25,8 @@ const Wrapper = styled.section<{ $isFlipped: boolean; $type: string }>`
 const getGrid = (type: string, isFlipped: boolean) => {
   if (isFlipped) {
     switch (type) {
+      case 'education':
+        return EDUCATION_GRID;
       case 'experience':
         return FLIPPED_EXPERIENCE_GRID;
       case 'project':
@@ -34,6 +36,8 @@ const getGrid = (type: string, isFlipped: boolean) => {
     }
   } else {
     switch (type) {
+      case 'education':
+        return EDUCATION_GRID;
       case 'experience':
         return EXPERIENCE_GRID;
       case 'project':
@@ -67,6 +71,16 @@ const FLIPPED_PROJECT_GRID = css`
     'image description'
     'image links      '
     'image .          ';
+`;
+
+const EDUCATION_GRID = css`
+  ${SHARED}
+  grid-gap: 40px;
+  grid-template-areas:
+    'title      '
+    'dates      '
+    'description';
+  grid-template-columns: 1fr;
 `;
 
 const EXPERIENCE_GRID = css`
