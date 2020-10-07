@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import CiaoestrelaLogo from 'assets/ciaoestrela.png';
 import RudderLogo from 'assets/rudder-logo.png';
+import Banner from 'components/Banner';
 import Category from 'components/Category';
 import CategoryTitle from 'components/CategoryTitle';
 import Header from 'components/Header';
@@ -18,9 +19,17 @@ const App: FunctionComponent = () => (
     <Header>Taylor Laekeman</Header>
     <main>
       <Category>
-        <CategoryTitle>Experience</CategoryTitle>
         <Section>
+          <Banner>Hi, I&apos;m Taylor</Banner>
+        </Section>
+      </Category>
+      <Category>
+        <CategoryTitle>Experience</CategoryTitle>
+        <Section type="experience">
           <SectionTitle area="title">Canvass Analytics</SectionTitle>
+          <Paragraph area="role">
+            Full Stack Software Engineer, August 2018&ndash;Present
+          </Paragraph>
           <Paragraph area="description">
             At Canvass Analytics, we build tools that allow industrial engineers
             to train machine learning models on their process data and deploy
@@ -41,8 +50,11 @@ const App: FunctionComponent = () => (
             </NewLink>
           </Links>
         </Section>
-        <Section isFlipped>
+        <Section type="experience" isFlipped>
           <SectionTitle area="title">Fourwalls Digital</SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, September 2017&ndash;December 2017
+          </Paragraph>
           <Paragraph area="description">
             Fourwalls Digital is a tool built for real estate agents and
             brokerages in Toronto. During my coop with Fourwalls, I participated
@@ -60,8 +72,11 @@ const App: FunctionComponent = () => (
             </NewLink>
           </Links>
         </Section>
-        <Section>
+        <Section type="experience">
           <SectionTitle area="title">AbacusNext</SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, September 2016&ndash;December 2016
+          </Paragraph>
           <Paragraph area="description">
             AbacusNext offers a range of digital tools for lawyers and law
             firms. At AbacusNext, I designed and implemented an intermediate API
@@ -77,8 +92,11 @@ const App: FunctionComponent = () => (
             </NewLink>
           </Links>
         </Section>
-        <Section>
+        <Section type="experience" isFlipped>
           <SectionTitle area="title">Encircle</SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, January 2016&ndash;April 2016
+          </Paragraph>
           <Paragraph area="description">
             Encircle is building a platform for stakeholders at every step of
             the insurance process. While at Encircle, I contributed to the
@@ -92,8 +110,11 @@ const App: FunctionComponent = () => (
             </NewLink>
           </Links>
         </Section>
-        <Section>
+        <Section type="experience">
           <SectionTitle area="title">MetricWire</SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, May 2015&ndash;August 2015
+          </Paragraph>
           <Paragraph area="description">
             MetricWire is a survey-delivery tool for mobile phones. At
             MetricWire I worked on the company&apos;s Android application. I
@@ -111,8 +132,11 @@ const App: FunctionComponent = () => (
             </NewLink>
           </Links>
         </Section>
-        <Section>
+        <Section type="experience" isFlipped>
           <SectionTitle area="title">CBTS Canada Inc</SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, September 2014&ndash;December 2014
+          </Paragraph>
           <Paragraph area="description">
             CBTS Canada was an experimental project setup to investigate
             automated workstation management to supplement the IT organization
@@ -128,8 +152,11 @@ const App: FunctionComponent = () => (
             <NewLink to="https://www.cbts.com/">read more about CBTS</NewLink>
           </Links>
         </Section>
-        <Section>
+        <Section type="experience">
           <SectionTitle area="title">Cyclica</SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, January 2014&ndash;April 2014
+          </Paragraph>
           <Paragraph area="description">
             Cyclica offers an drug-discovery platform for pharmaceutical
             researchers. At Cyclica, I implemented a program that converts
@@ -143,10 +170,13 @@ const App: FunctionComponent = () => (
             </NewLink>
           </Links>
         </Section>
-        <Section>
+        <Section type="experience" isFlipped>
           <SectionTitle area="title">
             Agriculture and Agri-Food Canada
           </SectionTitle>
+          <Paragraph area="role">
+            Software Development Coop, January 2013&ndash;April 2013
+          </Paragraph>
           <Paragraph area="description">
             At Agriculture and Agri-Food Canada, I created a web portal for the
             Canadian government&apos;s newly digitized biological information
@@ -161,7 +191,7 @@ const App: FunctionComponent = () => (
       </Category>
       <Category>
         <CategoryTitle>Projects</CategoryTitle>
-        <Section>
+        <Section type="project">
           <SectionTitle area="title">Ciao, Estrela Co.</SectionTitle>
           <Paragraph area="description">
             Rudder is a simple and opinionated task management tool designed
@@ -180,7 +210,7 @@ const App: FunctionComponent = () => (
             src={CiaoestrelaLogo}
           />
         </Section>
-        <Section isFlipped>
+        <Section type="project" isFlipped>
           <SectionTitle area="title">Rudder</SectionTitle>
           <Paragraph area="description">
             Rudder is a simple and opinionated task management tool designed

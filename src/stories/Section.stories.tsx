@@ -29,6 +29,65 @@ DefaultFlipped.args = {
   isFlipped: true,
 };
 
+export const Experience = Template.bind({});
+Experience.args = {
+  children: (
+    <>
+      <SectionTitle area="title">Title</SectionTitle>
+      <Paragraph area="role">
+        Software Engineer, August 2018&ndash;Present
+      </Paragraph>
+      <Paragraph area="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </Paragraph>
+      <Links>
+        <Link to="https://rudder.to">rudder.to</Link>
+        <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+          view the code
+        </Link>
+      </Links>
+      <Image alt="test" area="image" src={RudderLogo} />
+    </>
+  ),
+  type: 'experience',
+};
+
+export const ExperienceFlipped = Template.bind({});
+ExperienceFlipped.args = {
+  children: (
+    <>
+      <SectionTitle area="title">Title</SectionTitle>
+      <Paragraph area="role">
+        Software Engineer, August 2018&ndash;Present
+      </Paragraph>
+      <Paragraph area="description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </Paragraph>
+      <Links>
+        <Link to="https://rudder.to">rudder.to</Link>
+        <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+          view the code
+        </Link>
+      </Links>
+      <Image alt="test" area="image" src={RudderLogo} />
+    </>
+  ),
+  isFlipped: true,
+  type: 'experience',
+};
+
 export const Project = Template.bind({});
 Project.args = {
   children: (
