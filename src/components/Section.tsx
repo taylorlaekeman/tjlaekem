@@ -56,7 +56,8 @@ const FLIPPED_EXPERIENCE_GRID = css`
     'image title      '
     'image role       '
     'image description'
-    'image links      ';
+    'image links      '
+    'image .          ';
 `;
 
 const FLIPPED_PROJECT_GRID = css`
@@ -64,7 +65,8 @@ const FLIPPED_PROJECT_GRID = css`
   grid-template-areas:
     'image title      '
     'image description'
-    'image links      ';
+    'image links      '
+    'image .          ';
 `;
 
 const EXPERIENCE_GRID = css`
@@ -73,7 +75,8 @@ const EXPERIENCE_GRID = css`
     'title       image'
     'role        image'
     'description image'
-    'links       image';
+    'links       image'
+    '.           image';
 `;
 
 const PROJECT_GRID = css`
@@ -81,7 +84,8 @@ const PROJECT_GRID = css`
   grid-template-areas:
     'title       image'
     'description image'
-    'links       image';
+    'links       image'
+    '.           image';
 `;
 
 export default Section;
