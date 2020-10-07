@@ -14,7 +14,7 @@ const Section: FunctionComponent<propTypes> = ({
 export type propTypes = {
   children: ReactNode;
   isFlipped?: boolean;
-  type?: 'project' | 'default';
+  type?: 'project' | 'experience' | 'default';
 };
 
 const Wrapper = styled.section<{ $isFlipped: boolean; $type: string }>`
@@ -25,6 +25,8 @@ const Wrapper = styled.section<{ $isFlipped: boolean; $type: string }>`
 const getGrid = (type: string, isFlipped: boolean) => {
   if (isFlipped) {
     switch (type) {
+      case 'experience':
+        return FLIPPED_EXPERIENCE_GRID;
       case 'project':
         return FLIPPED_PROJECT_GRID;
       default:
@@ -32,6 +34,8 @@ const getGrid = (type: string, isFlipped: boolean) => {
     }
   } else {
     switch (type) {
+      case 'experience':
+        return EXPERIENCE_GRID;
       case 'project':
         return PROJECT_GRID;
       default:
@@ -46,12 +50,30 @@ const SHARED = css`
   grid-template-columns: 1fr 1fr;
 `;
 
+const FLIPPED_EXPERIENCE_GRID = css`
+  ${SHARED}
+  grid-template-areas:
+    'image title      '
+    'image role       '
+    'image description'
+    'image links      ';
+`;
+
 const FLIPPED_PROJECT_GRID = css`
   ${SHARED}
   grid-template-areas:
     'image title      '
     'image description'
     'image links      ';
+`;
+
+const EXPERIENCE_GRID = css`
+  ${SHARED}
+  grid-template-areas:
+    'title       image'
+    'role        image'
+    'description image'
+    'links       image';
 `;
 
 const PROJECT_GRID = css`
