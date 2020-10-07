@@ -19,7 +19,10 @@ export type propTypes = {
 
 const Wrapper = styled.section<{ $isFlipped: boolean; $type: string }>`
   ${({ $isFlipped, $type }) => getGrid($type, $isFlipped)};
-  max-width: 800px;
+
+  @media (min-width: 800px) {
+    width: 800px;
+  }
 `;
 
 const getGrid = (type: string, isFlipped: boolean) => {
