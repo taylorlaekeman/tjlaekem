@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import RudderLogo from 'assets/rudder-logo.png';
+import Banner from 'components/Banner';
 import Image from 'components/Image';
 import Links from 'components/Links';
 import Link from 'components/NewLink';
@@ -17,8 +18,19 @@ export default {
 
 const Template: Story<propTypes> = (args) => <Section {...args} />;
 
-export const Normal = Template.bind({});
-Normal.args = {
+export const Default = Template.bind({});
+Default.args = {
+  children: <Banner>Test!</Banner>,
+};
+
+export const DefaultFlipped = Template.bind({});
+DefaultFlipped.args = {
+  children: <Banner>Test!</Banner>,
+  isFlipped: true,
+};
+
+export const Project = Template.bind({});
+Project.args = {
   children: (
     <>
       <SectionTitle area="title">Title</SectionTitle>
@@ -40,10 +52,11 @@ Normal.args = {
       <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
+  type: 'project',
 };
 
-export const Flipped = Template.bind({});
-Flipped.args = {
+export const ProjectFlipped = Template.bind({});
+ProjectFlipped.args = {
   children: (
     <>
       <SectionTitle area="title">Title</SectionTitle>
@@ -66,4 +79,5 @@ Flipped.args = {
     </>
   ),
   isFlipped: true,
+  type: 'project',
 };
