@@ -10,6 +10,12 @@ export type propTypes = {
 };
 
 const Wrapper = styled.article`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
   & > h2 {
     margin-bottom: 100px;
   }

@@ -19,6 +19,7 @@ const Text = styled.h2`
 
   @media (min-width: 800px) {
     font-size: 3rem;
+    width: 800px;
   }
 
   @media (min-width: 1400px) {
