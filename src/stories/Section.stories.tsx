@@ -146,6 +146,10 @@ Education.args = {
   children: (
     <>
       <SectionTitle area="title">University of Waterloo</SectionTitle>
+      <Paragraph area="degree">
+        Bachelor of Applied Science in Honours Computer Engineering,
+        Co-operative Program
+      </Paragraph>
       <Paragraph area="dates">Graduated June 2018</Paragraph>
       <Paragraph area="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

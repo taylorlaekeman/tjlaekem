@@ -81,6 +81,7 @@ const EDUCATION_GRID = css`
   grid-gap: 40px;
   grid-template-areas:
     'title      '
+    'degree     '
     'dates      '
     'description';
   grid-template-columns: 1fr;
