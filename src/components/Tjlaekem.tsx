@@ -24,7 +24,7 @@ const App: FunctionComponent = () => (
         </Section>
       </Category>
       <Category>
-        <CategoryTitle>Experience</CategoryTitle>
+        <CategoryTitle id="experience">Experience</CategoryTitle>
         <Section type="experience">
           <SectionTitle area="title">Canvass Analytics</SectionTitle>
           <Paragraph area="role">
@@ -183,14 +183,14 @@ const App: FunctionComponent = () => (
             archive.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
+            <Link to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
               read more about AAFC
-            </NewLink>
+            </Link>
           </Links>
         </Section>
       </Category>
       <Category>
-        <CategoryTitle>Projects</CategoryTitle>
+        <CategoryTitle id="projects">Projects</CategoryTitle>
         <Section type="project">
           <SectionTitle area="title">Ciao, Estrela Co.</SectionTitle>
           <Paragraph area="description">
@@ -231,7 +231,7 @@ const App: FunctionComponent = () => (
         </Section>
       </Category>
       <Category>
-        <CategoryTitle>Education</CategoryTitle>
+        <CategoryTitle id="education">Education</CategoryTitle>
         <Section type="education">
           <SectionTitle area="title">University of Waterloo</SectionTitle>
           <Paragraph area="degree">
