@@ -9,7 +9,7 @@ import CategoryTitle from 'components/CategoryTitle';
 import Header from 'components/Header';
 import Image from 'components/Image';
 import Links from 'components/Links';
-import NewLink from 'components/NewLink';
+import Link from 'components/NewLink';
 import Paragraph from 'components/Paragraph';
 import Section from 'components/Section';
 import SectionTitle from 'components/SectionTitle';
@@ -45,9 +45,9 @@ const App: FunctionComponent = () => (
             src="https://static.wixstatic.com/media/0a64fb_d389afd95f6544978bb2fd978f614ac4~mv2.png/v1/fill/w_519,h_519,al_c,lg_1,q_85/0a64fb_d389afd95f6544978bb2fd978f614ac4~mv2.webp"
           />
           <Links area="links">
-            <NewLink to="https://www.canvass.io">
+            <Link to="https://www.canvass.io">
               read more about Canvass
-            </NewLink>
+            </Link>
           </Links>
         </Section>
         <Section type="experience" isFlipped>
@@ -67,9 +67,9 @@ const App: FunctionComponent = () => (
             and videos.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://fourwallsdigital.com/">
+            <Link to="https://fourwallsdigital.com/">
               read more about Fourwalls
-            </NewLink>
+            </Link>
           </Links>
         </Section>
         <Section type="experience">
@@ -87,9 +87,9 @@ const App: FunctionComponent = () => (
             imperfect and outdated server monitor
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://www.abacusnext.com/">
+            <Link to="https://www.abacusnext.com/">
               read more about AbacusNext
-            </NewLink>
+            </Link>
           </Links>
         </Section>
         <Section type="experience" isFlipped>
@@ -105,9 +105,9 @@ const App: FunctionComponent = () => (
             design after it was approved.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://www.getencircle.com/">
+            <Link to="https://www.getencircle.com/">
               read more about Encircle
-            </NewLink>
+            </Link>
           </Links>
         </Section>
         <Section type="experience">
@@ -127,9 +127,9 @@ const App: FunctionComponent = () => (
             introduce platform bias into survey results.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://metricwire.com/">
+            <Link to="https://metricwire.com/">
               read more about MetricWire
-            </NewLink>
+            </Link>
           </Links>
         </Section>
         <Section type="experience" isFlipped>
@@ -149,7 +149,7 @@ const App: FunctionComponent = () => (
             workstations.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://www.cbts.com/">read more about CBTS</NewLink>
+            <Link to="https://www.cbts.com/">read more about CBTS</Link>
           </Links>
         </Section>
         <Section type="experience">
@@ -165,9 +165,9 @@ const App: FunctionComponent = () => (
             order to identify potential side-effects.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://www.cyclicarx.com/">
+            <Link to="https://www.cyclicarx.com/">
               read more about Cyclica
-            </NewLink>
+            </Link>
           </Links>
         </Section>
         <Section type="experience" isFlipped>
@@ -199,10 +199,10 @@ const App: FunctionComponent = () => (
             development.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://cioaestrela.co">ciaoestrela.co</NewLink>
-            <NewLink to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
+            <Link to="https://cioaestrela.co">ciaoestrela.co</Link>
+            <Link to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
               view the code
-            </NewLink>
+            </Link>
           </Links>
           <Image
             alt="The Rudder logo. A dark-blue, capital R on a light-blue background."
@@ -218,10 +218,10 @@ const App: FunctionComponent = () => (
             development.
           </Paragraph>
           <Links area="links">
-            <NewLink to="https://rudder.to">rudder.to</NewLink>
-            <NewLink to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+            <Link to="https://rudder.to">rudder.to</Link>
+            <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
               view the code
-            </NewLink>
+            </Link>
           </Links>
           <Image
             alt="The Rudder logo. A dark-blue, capital R on a light-blue background."
