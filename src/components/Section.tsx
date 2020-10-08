@@ -14,7 +14,7 @@ const Section: FunctionComponent<propTypes> = ({
 export type propTypes = {
   children: ReactNode;
   isFlipped?: boolean;
-  type?: 'project' | 'experience' | 'default';
+  type?: 'default' | 'education' | 'experience' | 'project';
 };
 
 const Wrapper = styled.section<{ $isFlipped: boolean; $type: string }>`
