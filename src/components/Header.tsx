@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { ReactComponent as Github } from 'assets/github.svg';
 import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
 
-const Header: FunctionComponent<propTypes> = ({ children }: propTypes) => (
-  <Wrapper>
+const Header: FunctionComponent<propTypes> = ({ area = '', children }: propTypes) => (
+  <Wrapper $area={area}>
     <h1>{children}</h1>
     <Socials>
       <IconLink href="https://github.com/tjlaekem">
@@ -19,12 +19,14 @@ const Header: FunctionComponent<propTypes> = ({ children }: propTypes) => (
 );
 
 export type propTypes = {
+  area?: string;
   children: string;
 };
 
-const Wrapper = styled.header`
+const Wrapper = styled.header<{ $area: string }>`
   align-items: center;
   display: flex;
+  grid-area: ${({ $area }) => $area};
   justify-content: space-between;
   max-width: 800px;
   width: 100%;
