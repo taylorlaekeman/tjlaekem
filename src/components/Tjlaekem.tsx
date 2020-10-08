@@ -230,6 +230,22 @@ const App: FunctionComponent = () => (
           />
         </Section>
       </Category>
+      <Category>
+        <CategoryTitle>Education</CategoryTitle>
+        <Section type="education">
+          <SectionTitle area="title">University of Waterloo</SectionTitle>
+          <Paragraph area="degree">
+            Bachelor of Applied Science in Honours Computer Engineering,
+            Co-operative Program
+          </Paragraph>
+          <Paragraph area="dates">Graduated June 2018</Paragraph>
+          <Paragraph area="description">
+            I learned a lot during my time at the University of Waterloo. As a
+            student in the computer engineering program, I learned about the
+            hardware and software of modern computers.
+          </Paragraph>
+        </Section>
+      </Category>
     </main>
   </Wrapper>
 );

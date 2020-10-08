@@ -14,17 +14,22 @@ const Section: FunctionComponent<propTypes> = ({
 export type propTypes = {
   children: ReactNode;
   isFlipped?: boolean;
-  type?: 'project' | 'experience' | 'default';
+  type?: 'default' | 'education' | 'experience' | 'project';
 };
 
 const Wrapper = styled.section<{ $isFlipped: boolean; $type: string }>`
   ${({ $isFlipped, $type }) => getGrid($type, $isFlipped)};
-  max-width: 800px;
+
+  @media (min-width: 800px) {
+    width: 800px;
+  }
 `;
 
 const getGrid = (type: string, isFlipped: boolean) => {
   if (isFlipped) {
     switch (type) {
+      case 'education':
+        return EDUCATION_GRID;
       case 'experience':
         return FLIPPED_EXPERIENCE_GRID;
       case 'project':
@@ -34,6 +39,8 @@ const getGrid = (type: string, isFlipped: boolean) => {
     }
   } else {
     switch (type) {
+      case 'education':
+        return EDUCATION_GRID;
       case 'experience':
         return EXPERIENCE_GRID;
       case 'project':
@@ -67,6 +74,17 @@ const FLIPPED_PROJECT_GRID = css`
     'image description'
     'image links      '
     'image .          ';
+`;
+
+const EDUCATION_GRID = css`
+  ${SHARED}
+  grid-gap: 40px;
+  grid-template-areas:
+    'title      '
+    'degree     '
+    'dates      '
+    'description';
+  grid-template-columns: 1fr;
 `;
 
 const EXPERIENCE_GRID = css`
