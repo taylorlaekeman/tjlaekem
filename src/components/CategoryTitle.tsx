@@ -2,11 +2,13 @@ import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
 const CategoryTitle: FunctionComponent<propTypes> = ({
+  id = '',
   children,
-}: propTypes) => <Text>{children}</Text>;
+}: propTypes) => <Text id={id}>{children}</Text>;
 
 export type propTypes = {
   children: string;
+  id?: string;
 };
 
 const Text = styled.h2`
