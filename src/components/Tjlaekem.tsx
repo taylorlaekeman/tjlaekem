@@ -7,7 +7,6 @@ import Banner from 'components/Banner';
 import Category from 'components/Category';
 import CategoryTitle from 'components/CategoryTitle';
 import Header from 'components/Header';
-import Image from 'components/Image';
 import Links from 'components/Links';
 import NewLink from 'components/NewLink';
 import Paragraph from 'components/Paragraph';
@@ -39,11 +38,6 @@ const App: FunctionComponent = () => (
             our front-end React app, our Kafka-based ingestion pipeline, and our
             Kubeflow-orchestrated training pipeline.
           </Paragraph>
-          <Image
-            alt="The Canvass Analytics logo.  A geometric, purple 'C' in a light-blue circle on a white background."
-            area="image"
-            src="https://static.wixstatic.com/media/0a64fb_d389afd95f6544978bb2fd978f614ac4~mv2.png/v1/fill/w_519,h_519,al_c,lg_1,q_85/0a64fb_d389afd95f6544978bb2fd978f614ac4~mv2.webp"
-          />
           <Links area="links">
             <NewLink to="https://www.canvass.io">
               read more about Canvass
@@ -204,11 +198,6 @@ const App: FunctionComponent = () => (
               view the code
             </NewLink>
           </Links>
-          <Image
-            alt="The Rudder logo. A dark-blue, capital R on a light-blue background."
-            area="image"
-            src={CiaoestrelaLogo}
-          />
         </Section>
         <Section type="project" isFlipped>
           <SectionTitle area="title">Rudder</SectionTitle>
@@ -223,11 +212,6 @@ const App: FunctionComponent = () => (
               view the code
             </NewLink>
           </Links>
-          <Image
-            alt="The Rudder logo. A dark-blue, capital R on a light-blue background."
-            area="image"
-            src={RudderLogo}
-          />
         </Section>
       </Category>
       <Category>
