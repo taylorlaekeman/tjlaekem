@@ -9,6 +9,8 @@ import CategoryTitle from 'components/CategoryTitle';
 import Header from 'components/Header';
 import Image from 'components/Image';
 import Links from 'components/Links';
+import Nav from 'components/Nav';
+import NavItem from 'components/NavItem';
 import Link from 'components/NewLink';
 import Paragraph from 'components/Paragraph';
 import Section from 'components/Section';
@@ -16,8 +18,16 @@ import SectionTitle from 'components/SectionTitle';
 
 const App: FunctionComponent = () => (
   <Wrapper>
-    <Header>Taylor Laekeman</Header>
-    <main>
+    <Header area="header">Taylor Laekeman</Header>
+    <Aside>
+      <Nav>
+        <NavItem>Hello!</NavItem>
+        <NavItem isCurrent to="experience">Experience</NavItem>
+        <NavItem to="projects">Projects</NavItem>
+        <NavItem to="education">Education</NavItem>
+      </Nav>
+    </Aside>
+    <Main>
       <Category>
         <Section>
           <Banner>Hi, I&apos;m Taylor</Banner>
@@ -246,14 +256,27 @@ const App: FunctionComponent = () => (
           </Paragraph>
         </Section>
       </Category>
-    </main>
+    </Main>
   </Wrapper>
 );
 
 const Wrapper = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas:
+    '.   header .'
+    'nav main   .';
+  grid-template-columns: 1fr 800px 1fr;
+  grid-template-rows: max-content 1fr;
+  height: 100vh;
+`;
+
+const Aside = styled.aside`
+  grid-area: nav;
+`;
+
+const Main = styled.main`
+  grid-area: main;
+  overflow: scroll;
 `;
 
 export default App;
