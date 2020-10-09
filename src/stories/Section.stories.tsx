@@ -3,7 +3,6 @@ import { Meta, Story } from '@storybook/react/types-6-0';
 
 import RudderLogo from 'assets/rudder-logo.png';
 import Banner from 'components/Banner';
-import Image from 'components/Image';
 import Links from 'components/Links';
 import Link from 'components/NewLink';
 import Section, { propTypes } from 'components/Section';
@@ -52,7 +51,6 @@ Experience.args = {
           view the code
         </Link>
       </Links>
-      <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
   type: 'experience',
@@ -81,7 +79,6 @@ ExperienceFlipped.args = {
           view the code
         </Link>
       </Links>
-      <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
   isFlipped: true,
@@ -108,7 +105,6 @@ Project.args = {
           view the code
         </Link>
       </Links>
-      <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
   type: 'project',
@@ -134,7 +130,6 @@ ProjectFlipped.args = {
           view the code
         </Link>
       </Links>
-      <Image alt="test" area="image" src={RudderLogo} />
     </>
   ),
   isFlipped: true,
