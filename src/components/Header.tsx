@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { ReactComponent as Github } from 'assets/github.svg';
 import { ReactComponent as Linkedin } from 'assets/linkedin.svg';
 
-const Header: FunctionComponent<propTypes> = ({ children }: propTypes) => (
+const Header: FunctionComponent = () => (
   <Wrapper>
-    <h1>{children}</h1>
+    <Text>Taylor Laekeman</Text>
     <Socials>
       <IconLink href="https://github.com/tjlaekem">
         <Github />
@@ -18,16 +18,20 @@ const Header: FunctionComponent<propTypes> = ({ children }: propTypes) => (
   </Wrapper>
 );
 
-export type propTypes = {
-  children: string;
-};
-
 const Wrapper = styled.header`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  max-width: 800px;
   width: 100%;
+
+  @media (min-width: 600px) {
+    width: 600px;
+  }
+`;
+
+const Text = styled.p`
+  font-size: 1.6rem;
+  font-weight: 400;
 `;
 
 const Socials = styled.nav`

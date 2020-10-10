@@ -9,9 +9,6 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<propTypes> = (args) => <Header {...args} />;
+const Template: Story<propTypes> = () => <Header />;
 
 export const Normal = Template.bind({});
-Normal.args = {
-  children: 'Taylor Laekeman',
-};

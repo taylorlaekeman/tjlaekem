@@ -9,7 +9,7 @@ import Text from 'components/Text';
 
 const App: FunctionComponent = () => (
   <Wrapper>
-    <Header>Taylor Laekeman</Header>
+    <Header />
     <main>
       <Category>
         <Section>
