@@ -30,8 +30,12 @@ const Wrapper = styled.header`
 `;
 
 const Text = styled.p`
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  @media (min-width: 600px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Socials = styled.nav`
@@ -49,10 +53,14 @@ const Socials = styled.nav`
 const IconLink = styled.a`
   display: block;
   fill: ${({ theme }) => theme.colours.neutral[600]};
-  width: 24px;
+  width: 18px;
 
   &:hover {
     fill: ${({ theme }) => theme.colours.neutral[900]};
+  }
+
+  @media (min-width: 600px) {
+    width: 24px;
   }
 `;
 

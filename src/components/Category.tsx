@@ -14,14 +14,15 @@ const Wrapper = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 100px 0;
   min-height: 100vh;
 
-  & > h2 {
-    margin-bottom: 100px;
+  &:first-child {
+    padding-top: 0;
   }
 
-  & > section {
-    margin-bottom: 200px;
+  &:last-child {
+    padding-bottom: 0;
   }
 `;
 
