@@ -1,10 +1,8 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import RudderLogo from 'assets/rudder-logo.png';
 import Category, { propTypes } from 'components/Category';
 import CategoryTitle from 'components/CategoryTitle';
-import Image from 'components/Image';
 import Links from 'components/Links';
 import Link from 'components/NewLink';
 import Section from 'components/Section';

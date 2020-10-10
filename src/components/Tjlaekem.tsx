@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-import CiaoestrelaLogo from 'assets/ciaoestrela.png';
-import RudderLogo from 'assets/rudder-logo.png';
 import Banner from 'components/Banner';
 import Category from 'components/Category';
 import CategoryTitle from 'components/CategoryTitle';
@@ -24,12 +22,12 @@ const App: FunctionComponent = () => (
       </Category>
       <Category>
         <CategoryTitle>Experience</CategoryTitle>
-        <Section type="experience">
-          <SectionTitle area="title">Canvass Analytics</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>Canvass Analytics</SectionTitle>
+          <Paragraph>
             Full Stack Software Engineer, August 2018&ndash;Present
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             At Canvass Analytics, we build tools that allow industrial engineers
             to train machine learning models on their process data and deploy
             them for real-time predictions. As a Fullstack Software Engineer at
@@ -38,18 +36,18 @@ const App: FunctionComponent = () => (
             our front-end React app, our Kafka-based ingestion pipeline, and our
             Kubeflow-orchestrated training pipeline.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://www.canvass.io">
               read more about Canvass
             </NewLink>
           </Links>
         </Section>
-        <Section type="experience" isFlipped>
-          <SectionTitle area="title">Fourwalls Digital</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>Fourwalls Digital</SectionTitle>
+          <Paragraph>
             Software Development Coop, September 2017&ndash;December 2017
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             Fourwalls Digital is a tool built for real estate agents and
             brokerages in Toronto. During my coop with Fourwalls, I participated
             in the design and implementation of an extension that allows
@@ -60,18 +58,18 @@ const App: FunctionComponent = () => (
             extend existing listings with additional information, photographs,
             and videos.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://fourwallsdigital.com/">
               read more about Fourwalls
             </NewLink>
           </Links>
         </Section>
-        <Section type="experience">
-          <SectionTitle area="title">AbacusNext</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>AbacusNext</SectionTitle>
+          <Paragraph>
             Software Development Coop, September 2016&ndash;December 2016
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             AbacusNext offers a range of digital tools for lawyers and law
             firms. At AbacusNext, I designed and implemented an intermediate API
             that standardizes the interface to their various API servers for
@@ -80,36 +78,36 @@ const App: FunctionComponent = () => (
             designed and implemented a replacement for AbacusNext&apos;s
             imperfect and outdated server monitor
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://www.abacusnext.com/">
               read more about AbacusNext
             </NewLink>
           </Links>
         </Section>
-        <Section type="experience" isFlipped>
-          <SectionTitle area="title">Encircle</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>Encircle</SectionTitle>
+          <Paragraph>
             Software Development Coop, January 2016&ndash;April 2016
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             Encircle is building a platform for stakeholders at every step of
             the insurance process. While at Encircle, I contributed to the
             development of the Android and web applications. I redesigned the
             platform’s header and main navigation system and implemented the
             design after it was approved.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://www.getencircle.com/">
               read more about Encircle
             </NewLink>
           </Links>
         </Section>
-        <Section type="experience">
-          <SectionTitle area="title">MetricWire</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>MetricWire</SectionTitle>
+          <Paragraph>
             Software Development Coop, May 2015&ndash;August 2015
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             MetricWire is a survey-delivery tool for mobile phones. At
             MetricWire I worked on the company&apos;s Android application. I
             designed and implemented survey functionality that allows the
@@ -120,18 +118,18 @@ const App: FunctionComponent = () => (
             eliminate discrepancies across the platform, any of which could
             introduce platform bias into survey results.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://metricwire.com/">
               read more about MetricWire
             </NewLink>
           </Links>
         </Section>
-        <Section type="experience" isFlipped>
-          <SectionTitle area="title">CBTS Canada Inc</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>CBTS Canada Inc</SectionTitle>
+          <Paragraph>
             Software Development Coop, September 2014&ndash;December 2014
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             CBTS Canada was an experimental project setup to investigate
             automated workstation management to supplement the IT organization
             at CBTS. Taking a leadership role on a team of coop students, I
@@ -142,41 +140,39 @@ const App: FunctionComponent = () => (
             target configuration of a specific workstation, or class of
             workstations.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://www.cbts.com/">read more about CBTS</NewLink>
           </Links>
         </Section>
-        <Section type="experience">
-          <SectionTitle area="title">Cyclica</SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>Cyclica</SectionTitle>
+          <Paragraph>
             Software Development Coop, January 2014&ndash;April 2014
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             Cyclica offers an drug-discovery platform for pharmaceutical
             researchers. At Cyclica, I implemented a program that converts
             pharmaceuticals into a graph representation, and compares their
             geometries to the known geometries of proteins in the human body in
             order to identify potential side-effects.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://www.cyclicarx.com/">
               read more about Cyclica
             </NewLink>
           </Links>
         </Section>
-        <Section type="experience" isFlipped>
-          <SectionTitle area="title">
-            Agriculture and Agri-Food Canada
-          </SectionTitle>
-          <Paragraph area="role">
+        <Section>
+          <SectionTitle>Agriculture and Agri-Food Canada</SectionTitle>
+          <Paragraph>
             Software Development Coop, January 2013&ndash;April 2013
           </Paragraph>
-          <Paragraph area="description">
+          <Paragraph>
             At Agriculture and Agri-Food Canada, I created a web portal for the
             Canadian government&apos;s newly digitized biological information
             archive.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
               read more about AAFC
             </NewLink>
@@ -185,28 +181,28 @@ const App: FunctionComponent = () => (
       </Category>
       <Category>
         <CategoryTitle>Projects</CategoryTitle>
-        <Section type="project">
-          <SectionTitle area="title">Ciao, Estrela Co.</SectionTitle>
-          <Paragraph area="description">
+        <Section>
+          <SectionTitle>Ciao, Estrela Co.</SectionTitle>
+          <Paragraph>
             Rudder is a simple and opinionated task management tool designed
             according to the principles that underpin agile software
             development.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://cioaestrela.co">ciaoestrela.co</NewLink>
             <NewLink to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
               view the code
             </NewLink>
           </Links>
         </Section>
-        <Section type="project" isFlipped>
-          <SectionTitle area="title">Rudder</SectionTitle>
-          <Paragraph area="description">
+        <Section>
+          <SectionTitle>Rudder</SectionTitle>
+          <Paragraph>
             Rudder is a simple and opinionated task management tool designed
             according to the principles that underpin agile software
             development.
           </Paragraph>
-          <Links area="links">
+          <Links>
             <NewLink to="https://rudder.to">rudder.to</NewLink>
             <NewLink to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
               view the code
@@ -216,14 +212,14 @@ const App: FunctionComponent = () => (
       </Category>
       <Category>
         <CategoryTitle>Education</CategoryTitle>
-        <Section type="education">
-          <SectionTitle area="title">University of Waterloo</SectionTitle>
-          <Paragraph area="degree">
+        <Section>
+          <SectionTitle>University of Waterloo</SectionTitle>
+          <Paragraph>
             Bachelor of Applied Science in Honours Computer Engineering,
             Co-operative Program
           </Paragraph>
-          <Paragraph area="dates">Graduated June 2018</Paragraph>
-          <Paragraph area="description">
+          <Paragraph>Graduated June 2018</Paragraph>
+          <Paragraph>
             I learned a lot during my time at the University of Waterloo. As a
             student in the computer engineering program, I learned about the
             hardware and software of modern computers.
