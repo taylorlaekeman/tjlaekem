@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Category from 'components/Category';
 import Header from 'components/Header';
-import NewLink from 'components/NewLink';
+import Link from 'components/NewLink';
 import Section from 'components/Section';
 import Text from 'components/Text';
 
@@ -32,7 +32,7 @@ const App: FunctionComponent = () => (
             our front-end React app, our Kafka-based ingestion pipeline, and our
             Kubeflow-orchestrated training pipeline.
           </Text>
-          <NewLink to="https://www.canvass.io">read more about Canvass</NewLink>
+          <Link to="https://www.canvass.io">read more about Canvass</Link>
         </Section>
         <Section>
           <Text type="section">Fourwalls Digital</Text>
@@ -50,9 +50,9 @@ const App: FunctionComponent = () => (
             extend existing listings with additional information, photographs,
             and videos.
           </Text>
-          <NewLink to="https://fourwallsdigital.com/">
+          <Link to="https://fourwallsdigital.com/">
             read more about Fourwalls
-          </NewLink>
+          </Link>
         </Section>
         <Section>
           <Text type="section">AbacusNext</Text>
@@ -68,9 +68,9 @@ const App: FunctionComponent = () => (
             designed and implemented a replacement for AbacusNext&apos;s
             imperfect and outdated server monitor
           </Text>
-          <NewLink to="https://www.abacusnext.com/">
+          <Link to="https://www.abacusnext.com/">
             read more about AbacusNext
-          </NewLink>
+          </Link>
         </Section>
         <Section>
           <Text type="section">Encircle</Text>
@@ -84,9 +84,9 @@ const App: FunctionComponent = () => (
             platform’s header and main navigation system and implemented the
             design after it was approved.
           </Text>
-          <NewLink to="https://www.getencircle.com/">
+          <Link to="https://www.getencircle.com/">
             read more about Encircle
-          </NewLink>
+          </Link>
         </Section>
         <Section>
           <Text type="section">MetricWire</Text>
@@ -104,9 +104,7 @@ const App: FunctionComponent = () => (
             eliminate discrepancies across the platform, any of which could
             introduce platform bias into survey results.
           </Text>
-          <NewLink to="https://metricwire.com/">
-            read more about MetricWire
-          </NewLink>
+          <Link to="https://metricwire.com/">read more about MetricWire</Link>
         </Section>
         <Section>
           <Text type="section">CBTS Canada Inc</Text>
@@ -124,7 +122,7 @@ const App: FunctionComponent = () => (
             target configuration of a specific workstation, or class of
             workstations.
           </Text>
-          <NewLink to="https://www.cbts.com/">read more about CBTS</NewLink>
+          <Link to="https://www.cbts.com/">read more about CBTS</Link>
         </Section>
         <Section>
           <Text type="section">Cyclica</Text>
@@ -138,9 +136,7 @@ const App: FunctionComponent = () => (
             geometries to the known geometries of proteins in the human body in
             order to identify potential side-effects.
           </Text>
-          <NewLink to="https://www.cyclicarx.com/">
-            read more about Cyclica
-          </NewLink>
+          <Link to="https://www.cyclicarx.com/">read more about Cyclica</Link>
         </Section>
         <Section>
           <Text type="section">Agriculture and Agri-Food Canada</Text>
@@ -152,9 +148,9 @@ const App: FunctionComponent = () => (
             Canadian government&apos;s newly digitized biological information
             archive.
           </Text>
-          <NewLink to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
+          <Link to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
             read more about AAFC
-          </NewLink>
+          </Link>
         </Section>
       </Category>
       <Category>
@@ -166,10 +162,10 @@ const App: FunctionComponent = () => (
             according to the principles that underpin agile software
             development.
           </Text>
-          <NewLink to="https://cioaestrela.co">ciaoestrela.co</NewLink>
-          <NewLink to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
+          <Link to="https://cioaestrela.co">ciaoestrela.co</Link>
+          <Link to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
             view the code
-          </NewLink>
+          </Link>
         </Section>
         <Section>
           <Text type="section">Rudder</Text>
@@ -178,10 +174,10 @@ const App: FunctionComponent = () => (
             according to the principles that underpin agile software
             development.
           </Text>
-          <NewLink to="https://rudder.to">rudder.to</NewLink>
-          <NewLink to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+          <Link to="https://rudder.to">rudder.to</Link>
+          <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
             view the code
-          </NewLink>
+          </Link>
         </Section>
       </Category>
       <Category>
