@@ -29,8 +29,9 @@ const getInnerLink = (type: string) => {
 
 const DefaultLink = styled.a`
   color: ${({ theme }) => theme.colours.text};
+  display: block;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   &:last-child {
     margin-bottom: 0;
@@ -43,7 +44,7 @@ const ButtonLink = styled.a`
   color: ${({ theme }) => theme.colours.text};
   font-size: 1.2rem;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 10px;
 
   &:last-child {
