@@ -20,6 +20,8 @@ type validTypes = 'paragraph' | 'section-title' | 'category-title' | 'banner';
 
 const getComponent = (type: validTypes) => {
   switch (type) {
+    case 'banner':
+      return Banner;
     case 'category-title':
       return CategoryTitle;
     case 'section-title':
@@ -32,6 +34,12 @@ const getComponent = (type: validTypes) => {
 const sharedStyles = css<componentPropTypes>`
   color: ${({ theme }) => theme.colours.text};
   grid-area: ${({ $area }) => $area};
+`;
+
+const Banner = styled.h1<componentPropTypes>`
+  font-size: 7rem;
+  font-weight: 500;
+  ${sharedStyles}
 `;
 
 const CategoryTitle = styled.h2<componentPropTypes>`
