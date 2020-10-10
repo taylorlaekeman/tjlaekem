@@ -9,6 +9,5 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story = (args) => <Tjlaekem {...args} />;
-
+const Template: Story = () => <Tjlaekem />;
 export const Normal = Template.bind({});
