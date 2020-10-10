@@ -1,7 +1,6 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Links from 'components/Links';
 import Link from 'components/NewLink';
 import Section, { propTypes } from 'components/Section';
 import Text from 'components/Text';
@@ -34,12 +33,10 @@ Experience.args = {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </Text>
-      <Links>
-        <Link to="https://rudder.to">rudder.to</Link>
-        <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
-          view the code
-        </Link>
-      </Links>
+      <Link to="https://rudder.to">rudder.to</Link>
+      <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+        view the code
+      </Link>
     </>
   ),
 };
@@ -58,12 +55,10 @@ Project.args = {
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.
       </Text>
-      <Links>
-        <Link to="https://rudder.to">rudder.to</Link>
-        <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
-          view the code
-        </Link>
-      </Links>
+      <Link to="https://rudder.to">rudder.to</Link>
+      <Link to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+        view the code
+      </Link>
     </>
   ),
 };

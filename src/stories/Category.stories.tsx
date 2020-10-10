@@ -2,7 +2,6 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import Category, { propTypes } from 'components/Category';
-import Links from 'components/Links';
 import Link from 'components/NewLink';
 import Section from 'components/Section';
 import Text from 'components/Text';
@@ -31,10 +30,8 @@ Normal.args = {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
-        <Links>
-          <Link to="test">view the site</Link>
-          <Link to="test">view the code</Link>
-        </Links>
+        <Link to="test">view the site</Link>
+        <Link to="test">view the code</Link>
       </Section>
       <Section>
         <Text type="section">Title</Text>
@@ -47,10 +44,8 @@ Normal.args = {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
-        <Links>
-          <Link to="test">view the site</Link>
-          <Link to="test">view the code</Link>
-        </Links>
+        <Link to="test">view the site</Link>
+        <Link to="test">view the code</Link>
       </Section>
       <Section>
         <Text type="section">Title</Text>
@@ -63,10 +58,8 @@ Normal.args = {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </Text>
-        <Links>
-          <Link to="test">view the site</Link>
-          <Link to="test">view the code</Link>
-        </Links>
+        <Link to="test">view the site</Link>
+        <Link to="test">view the code</Link>
       </Section>
     </>
   ),

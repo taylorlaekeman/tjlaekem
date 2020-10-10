@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 import Category from 'components/Category';
 import Header from 'components/Header';
-import Links from 'components/Links';
 import NewLink from 'components/NewLink';
 import Section from 'components/Section';
 import Text from 'components/Text';
@@ -33,11 +32,7 @@ const App: FunctionComponent = () => (
             our front-end React app, our Kafka-based ingestion pipeline, and our
             Kubeflow-orchestrated training pipeline.
           </Text>
-          <Links>
-            <NewLink to="https://www.canvass.io">
-              read more about Canvass
-            </NewLink>
-          </Links>
+          <NewLink to="https://www.canvass.io">read more about Canvass</NewLink>
         </Section>
         <Section>
           <Text type="section">Fourwalls Digital</Text>
@@ -55,11 +50,9 @@ const App: FunctionComponent = () => (
             extend existing listings with additional information, photographs,
             and videos.
           </Text>
-          <Links>
-            <NewLink to="https://fourwallsdigital.com/">
-              read more about Fourwalls
-            </NewLink>
-          </Links>
+          <NewLink to="https://fourwallsdigital.com/">
+            read more about Fourwalls
+          </NewLink>
         </Section>
         <Section>
           <Text type="section">AbacusNext</Text>
@@ -75,11 +68,9 @@ const App: FunctionComponent = () => (
             designed and implemented a replacement for AbacusNext&apos;s
             imperfect and outdated server monitor
           </Text>
-          <Links>
-            <NewLink to="https://www.abacusnext.com/">
-              read more about AbacusNext
-            </NewLink>
-          </Links>
+          <NewLink to="https://www.abacusnext.com/">
+            read more about AbacusNext
+          </NewLink>
         </Section>
         <Section>
           <Text type="section">Encircle</Text>
@@ -93,11 +84,9 @@ const App: FunctionComponent = () => (
             platform’s header and main navigation system and implemented the
             design after it was approved.
           </Text>
-          <Links>
-            <NewLink to="https://www.getencircle.com/">
-              read more about Encircle
-            </NewLink>
-          </Links>
+          <NewLink to="https://www.getencircle.com/">
+            read more about Encircle
+          </NewLink>
         </Section>
         <Section>
           <Text type="section">MetricWire</Text>
@@ -115,11 +104,9 @@ const App: FunctionComponent = () => (
             eliminate discrepancies across the platform, any of which could
             introduce platform bias into survey results.
           </Text>
-          <Links>
-            <NewLink to="https://metricwire.com/">
-              read more about MetricWire
-            </NewLink>
-          </Links>
+          <NewLink to="https://metricwire.com/">
+            read more about MetricWire
+          </NewLink>
         </Section>
         <Section>
           <Text type="section">CBTS Canada Inc</Text>
@@ -137,9 +124,7 @@ const App: FunctionComponent = () => (
             target configuration of a specific workstation, or class of
             workstations.
           </Text>
-          <Links>
-            <NewLink to="https://www.cbts.com/">read more about CBTS</NewLink>
-          </Links>
+          <NewLink to="https://www.cbts.com/">read more about CBTS</NewLink>
         </Section>
         <Section>
           <Text type="section">Cyclica</Text>
@@ -153,11 +138,9 @@ const App: FunctionComponent = () => (
             geometries to the known geometries of proteins in the human body in
             order to identify potential side-effects.
           </Text>
-          <Links>
-            <NewLink to="https://www.cyclicarx.com/">
-              read more about Cyclica
-            </NewLink>
-          </Links>
+          <NewLink to="https://www.cyclicarx.com/">
+            read more about Cyclica
+          </NewLink>
         </Section>
         <Section>
           <Text type="section">Agriculture and Agri-Food Canada</Text>
@@ -169,11 +152,9 @@ const App: FunctionComponent = () => (
             Canadian government&apos;s newly digitized biological information
             archive.
           </Text>
-          <Links>
-            <NewLink to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
-              read more about AAFC
-            </NewLink>
-          </Links>
+          <NewLink to="https://www.agr.gc.ca/eng/agriculture-and-agri-food-canada">
+            read more about AAFC
+          </NewLink>
         </Section>
       </Category>
       <Category>
@@ -185,12 +166,10 @@ const App: FunctionComponent = () => (
             according to the principles that underpin agile software
             development.
           </Text>
-          <Links>
-            <NewLink to="https://cioaestrela.co">ciaoestrela.co</NewLink>
-            <NewLink to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
-              view the code
-            </NewLink>
-          </Links>
+          <NewLink to="https://cioaestrela.co">ciaoestrela.co</NewLink>
+          <NewLink to="https://github.com/tjlaekem?tab=repositories&q=ciaoestrela&type=&language=">
+            view the code
+          </NewLink>
         </Section>
         <Section>
           <Text type="section">Rudder</Text>
@@ -199,12 +178,10 @@ const App: FunctionComponent = () => (
             according to the principles that underpin agile software
             development.
           </Text>
-          <Links>
-            <NewLink to="https://rudder.to">rudder.to</NewLink>
-            <NewLink to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
-              view the code
-            </NewLink>
-          </Links>
+          <NewLink to="https://rudder.to">rudder.to</NewLink>
+          <NewLink to="https://github.com/tjlaekem?tab=repositories&q=rudder&type=&language=">
+            view the code
+          </NewLink>
         </Section>
       </Category>
       <Category>
