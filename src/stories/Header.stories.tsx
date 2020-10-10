@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Header, { propTypes } from 'components/Header';
+import Header from 'components/Header';
 
 export default {
   title: 'Header',
@@ -9,9 +9,6 @@ export default {
   argTypes: {},
 } as Meta;
 
-const Template: Story<propTypes> = (args) => <Header {...args} />;
+const Template: Story = () => <Header />;
 
 export const Normal = Template.bind({});
-Normal.args = {
-  children: 'Taylor Laekeman',
-};

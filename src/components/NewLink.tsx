@@ -29,14 +29,12 @@ const getInnerLink = (type: string) => {
 
 const DefaultLink = styled.a`
   color: ${({ theme }) => theme.colours.text};
-  font-size: 0.9rem;
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
 
-  @media (min-width: 800px) {
-    font-size: 1rem;
-  }
-
-  @media (min-width: 1400px) {
-    font-size: 1.2rem;
+  &:last-child {
+    margin-bottom: 0;
   }
 `;
 
@@ -44,20 +42,17 @@ const ButtonLink = styled.a`
   background-color: ${({ theme }) => theme.colours.neutral[100]};
   border-radius: 4px;
   color: ${({ theme }) => theme.colours.text};
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   text-decoration: none;
+  margin-bottom: 40px;
   padding: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover {
     background-color: ${({ theme }) => theme.colours.neutral[200]};
-  }
-
-  @media (min-width: 800px) {
-    font-size: 1rem;
-  }
-
-  @media (min-width: 1400px) {
-    font-size: 1.2rem;
   }
 `;
 
