@@ -1,15 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import styled from 'styled-components';
 
-import Banner from 'components/Banner';
 import Category from 'components/Category';
-import CategoryTitle from 'components/CategoryTitle';
 import Header from 'components/Header';
 import Links from 'components/Links';
 import NewLink from 'components/NewLink';
-import Paragraph from 'components/Paragraph';
 import Section from 'components/Section';
-import SectionTitle from 'components/SectionTitle';
 import Text from 'components/Text';
 
 const App: FunctionComponent = () => (
