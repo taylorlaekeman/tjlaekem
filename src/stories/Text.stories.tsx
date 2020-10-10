@@ -32,27 +32,27 @@ LongParagraph.args = {
 export const SectionTitle = Template.bind({});
 SectionTitle.args = {
   children: 'Lorem ipsum dolor sit amet.',
-  type: 'section-title',
+  type: 'section',
 };
 
 export const LongSectionTitle = Template.bind({});
 LongSectionTitle.args = {
   children:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque fringilla egestas. Quisque rutrum malesuada nisi. Aliquam porta consectetur arcu, sit amet sollicitudin justo sollicitudin ut. Duis quis rhoncus lacus. Sed sodales eu turpis egestas bibendum. Cras faucibus bibendum enim, vel pellentesque nisl hendrerit eget. Praesent tempor, ipsum ac commodo maximus, tellus leo malesuada orci, imperdiet finibus elit leo eget lectus. Curabitur ultricies nisi ac lorem tincidunt, bibendum accumsan eros consectetur. Nam congue lacus quam, quis interdum nibh suscipit a. Pellentesque vel orci ligula. Vivamus sit amet mauris eget libero sollicitudin tempus. Nam efficitur efficitur odio vel auctor. Quisque imperdiet tristique leo. Donec facilisis volutpat lacus in sodales.',
-  type: 'section-title',
+  type: 'section',
 };
 
 export const CategoryTitle = Template.bind({});
 CategoryTitle.args = {
   children: 'Lorem ipsum dolor sit amet.',
-  type: 'category-title',
+  type: 'category',
 };
 
 export const LongCategoryTitle = Template.bind({});
 LongCategoryTitle.args = {
   children:
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque fringilla egestas. Quisque rutrum malesuada nisi. Aliquam porta consectetur arcu, sit amet sollicitudin justo sollicitudin ut. Duis quis rhoncus lacus. Sed sodales eu turpis egestas bibendum. Cras faucibus bibendum enim, vel pellentesque nisl hendrerit eget. Praesent tempor, ipsum ac commodo maximus, tellus leo malesuada orci, imperdiet finibus elit leo eget lectus. Curabitur ultricies nisi ac lorem tincidunt, bibendum accumsan eros consectetur. Nam congue lacus quam, quis interdum nibh suscipit a. Pellentesque vel orci ligula. Vivamus sit amet mauris eget libero sollicitudin tempus. Nam efficitur efficitur odio vel auctor. Quisque imperdiet tristique leo. Donec facilisis volutpat lacus in sodales.',
-  type: 'category-title',
+  type: 'category',
 };
 
 export const Banner = Template.bind({});

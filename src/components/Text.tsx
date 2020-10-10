@@ -16,16 +16,16 @@ export type propTypes = {
   type?: validTypes;
 };
 
-type validTypes = 'paragraph' | 'section-title' | 'category-title' | 'banner';
+type validTypes = 'banner' | 'category' | 'section' | 'paragraph';
 
 const getComponent = (type: validTypes) => {
   switch (type) {
     case 'banner':
       return Banner;
-    case 'category-title':
-      return CategoryTitle;
-    case 'section-title':
-      return SectionTitle;
+    case 'category':
+      return Category;
+    case 'section':
+      return Section;
     default:
       return Paragraph;
   }
@@ -42,13 +42,13 @@ const Banner = styled.h1<componentPropTypes>`
   ${sharedStyles}
 `;
 
-const CategoryTitle = styled.h2<componentPropTypes>`
+const Category = styled.h2<componentPropTypes>`
   font-size: 5rem;
   font-weight: 600;
   ${sharedStyles}
 `;
 
-const SectionTitle = styled.h3<componentPropTypes>`
+const Section = styled.h3<componentPropTypes>`
   font-size: 3rem;
   font-weight: 600;
   ${sharedStyles}
