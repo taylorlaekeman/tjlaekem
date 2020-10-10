@@ -41,6 +41,14 @@ const sharedStyles = css<componentPropTypes>`
   }
 `;
 
+const width = css`
+  width: 100%;
+
+  @media (min-width: 600px) {
+    width: 600px;
+  }
+`;
+
 const Banner = styled.h1<componentPropTypes>`
   font-size: 7rem;
   font-weight: 500;
@@ -51,20 +59,22 @@ const Category = styled.h2<componentPropTypes>`
   font-size: 5rem;
   font-weight: 600;
   ${sharedStyles}
+  ${width}
 `;
 
 const Section = styled.h3<componentPropTypes>`
   font-size: 3rem;
   font-weight: 600;
   ${sharedStyles}
+  ${width}
 `;
 
 const Paragraph = styled.p<componentPropTypes>`
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 30px;
-  max-width: 600px;
   ${sharedStyles}
+  ${width}
 `;
 
 type componentPropTypes = {
