@@ -2,12 +2,10 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import Category, { propTypes } from 'components/Category';
-import CategoryTitle from 'components/CategoryTitle';
 import Links from 'components/Links';
 import Link from 'components/NewLink';
 import Section from 'components/Section';
-import SectionTitle from 'components/SectionTitle';
-import Paragraph from 'components/Paragraph';
+import Text from 'components/Text';
 
 export default {
   title: 'Category/Category',
@@ -21,10 +19,10 @@ export const Normal = Template.bind({});
 Normal.args = {
   children: (
     <>
-      <CategoryTitle>Projects</CategoryTitle>
+      <Text type="category">Projects</Text>
       <Section>
-        <SectionTitle>Title</SectionTitle>
-        <Paragraph>
+        <Text type="section">Title</Text>
+        <Text type="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -32,15 +30,15 @@ Normal.args = {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </Paragraph>
+        </Text>
         <Links>
           <Link to="test">view the site</Link>
           <Link to="test">view the code</Link>
         </Links>
       </Section>
       <Section>
-        <SectionTitle>Title</SectionTitle>
-        <Paragraph>
+        <Text type="section">Title</Text>
+        <Text type="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -48,15 +46,15 @@ Normal.args = {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </Paragraph>
+        </Text>
         <Links>
           <Link to="test">view the site</Link>
           <Link to="test">view the code</Link>
         </Links>
       </Section>
       <Section>
-        <SectionTitle>Title</SectionTitle>
-        <Paragraph>
+        <Text type="section">Title</Text>
+        <Text type="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -64,7 +62,7 @@ Normal.args = {
           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
-        </Paragraph>
+        </Text>
         <Links>
           <Link to="test">view the site</Link>
           <Link to="test">view the code</Link>
