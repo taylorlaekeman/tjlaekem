@@ -34,6 +34,11 @@ const getComponent = (type: validTypes) => {
 const sharedStyles = css<componentPropTypes>`
   color: ${({ theme }) => theme.colours.text};
   grid-area: ${({ $area }) => $area};
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const Banner = styled.h1<componentPropTypes>`
@@ -57,7 +62,7 @@ const Section = styled.h3<componentPropTypes>`
 const Paragraph = styled.p<componentPropTypes>`
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 30px;
   max-width: 600px;
   ${sharedStyles}
 `;
