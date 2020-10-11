@@ -21,7 +21,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">Canvass Analytics</Text>
           <Text type="paragraph">
-            Full Stack Software Engineer, August 2018&ndash;Present
+            Full Stack Software Engineer
+          </Text>
+          <Text type="paragraph">
+            August 2018&ndash;Present
           </Text>
           <Text type="paragraph">
             At Canvass Analytics, we build tools that allow industrial engineers
@@ -37,7 +40,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">Fourwalls Digital</Text>
           <Text type="paragraph">
-            Software Development Coop, September 2017&ndash;December 2017
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            September 2017&ndash;December 2017
           </Text>
           <Text type="paragraph">
             Fourwalls Digital is a tool built for real estate agents and
@@ -57,7 +63,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">AbacusNext</Text>
           <Text type="paragraph">
-            Software Development Coop, September 2016&ndash;December 2016
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            September 2016&ndash;December 2016
           </Text>
           <Text type="paragraph">
             AbacusNext offers a range of digital tools for lawyers and law
@@ -75,7 +84,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">Encircle</Text>
           <Text type="paragraph">
-            Software Development Coop, January 2016&ndash;April 2016
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            January 2016&ndash;April 2016
           </Text>
           <Text type="paragraph">
             Encircle is building a platform for stakeholders at every step of
@@ -91,7 +103,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">MetricWire</Text>
           <Text type="paragraph">
-            Software Development Coop, May 2015&ndash;August 2015
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            May 2015&ndash;August 2015
           </Text>
           <Text type="paragraph">
             MetricWire is a survey-delivery tool for mobile phones. At
@@ -109,7 +124,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">CBTS Canada Inc</Text>
           <Text type="paragraph">
-            Software Development Coop, September 2014&ndash;December 2014
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            September 2014&ndash;December 2014
           </Text>
           <Text type="paragraph">
             CBTS Canada was an experimental project setup to investigate
@@ -127,7 +145,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">Cyclica</Text>
           <Text type="paragraph">
-            Software Development Coop, January 2014&ndash;April 2014
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            January 2014&ndash;April 2014
           </Text>
           <Text type="paragraph">
             Cyclica offers an drug-discovery platform for pharmaceutical
@@ -141,7 +162,10 @@ const App: FunctionComponent = () => (
         <Section>
           <Text type="section">Agriculture and Agri-Food Canada</Text>
           <Text type="paragraph">
-            Software Development Coop, January 2013&ndash;April 2013
+            Software Development Coop
+          </Text>
+          <Text type="paragraph">
+            January 2013&ndash;April 2013
           </Text>
           <Text type="paragraph">
             At Agriculture and Agri-Food Canada, I created a web portal for the
