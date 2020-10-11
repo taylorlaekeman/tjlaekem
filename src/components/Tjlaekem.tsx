@@ -228,6 +228,7 @@ const Wrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 40px;
 `;
 
 export default App;

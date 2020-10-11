@@ -29,14 +29,14 @@ const getInnerLink = (type: string) => {
 
 const sharedStyles = css`
   color: ${({ theme }) => theme.colours.text};
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-bottom: 40px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 680px) {
     font-size: 1.2rem;
   }
 `;

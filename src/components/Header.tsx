@@ -24,7 +24,7 @@ const Wrapper = styled.header`
   justify-content: space-between;
   width: 100%;
 
-  @media (min-width: 600px) {
+  @media (min-width: 680px) {
     width: 600px;
   }
 `;
@@ -33,7 +33,7 @@ const Text = styled.p`
   font-size: 1.1rem;
   font-weight: 600;
 
-  @media (min-width: 600px) {
+  @media (min-width: 680px) {
     font-size: 1.6rem;
   }
 `;
@@ -59,7 +59,7 @@ const IconLink = styled.a`
     fill: ${({ theme }) => theme.colours.neutral[900]};
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 680px) {
     width: 24px;
   }
 `;
