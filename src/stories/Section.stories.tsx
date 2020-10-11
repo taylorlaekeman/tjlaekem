@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
-import Link from 'components/NewLink';
+import Link from 'components/Link';
 import Section, { propTypes } from 'components/Section';
 import Text from 'components/Text';
 

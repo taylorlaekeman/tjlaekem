@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Category from 'components/Category';
 import Header from 'components/Header';
-import Link from 'components/NewLink';
+import Link from 'components/Link';
 import Section from 'components/Section';
 import Text from 'components/Text';
 

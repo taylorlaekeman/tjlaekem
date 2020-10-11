@@ -2,7 +2,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react/types-6-0';
 
 import Category, { propTypes } from 'components/Category';
-import Link from 'components/NewLink';
+import Link from 'components/Link';
 import Section from 'components/Section';
 import Text from 'components/Text';
 
