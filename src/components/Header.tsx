@@ -24,14 +24,22 @@ const Wrapper = styled.header`
   justify-content: space-between;
   width: 100%;
 
-  @media (min-width: 600px) {
+  @media (min-width: 460px) {
+    width: 380px;
+  }
+
+  @media (min-width: 680px) {
     width: 600px;
   }
 `;
 
 const Text = styled.p`
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  @media (min-width: 680px) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Socials = styled.nav`
@@ -49,10 +57,14 @@ const Socials = styled.nav`
 const IconLink = styled.a`
   display: block;
   fill: ${({ theme }) => theme.colours.neutral[600]};
-  width: 24px;
+  width: 18px;
 
   &:hover {
     fill: ${({ theme }) => theme.colours.neutral[900]};
+  }
+
+  @media (min-width: 680px) {
+    width: 24px;
   }
 `;
 

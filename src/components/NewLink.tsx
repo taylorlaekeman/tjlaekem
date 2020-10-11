@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Link: FunctionComponent<propTypes> = ({
   children,
@@ -27,29 +27,37 @@ const getInnerLink = (type: string) => {
   }
 };
 
-const DefaultLink = styled.a`
+const sharedStyles = css`
   color: ${({ theme }) => theme.colours.text};
-  display: block;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   margin-bottom: 40px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: 460px) {
+    width: 380px;
+  }
+
+  @media (min-width: 680px) {
+    font-size: 1.2rem;
   }
 `;
 
+const DefaultLink = styled.a`
+  ${sharedStyles}
+
+  display: block;
+`;
+
 const ButtonLink = styled.a`
+  ${sharedStyles}
+
   background-color: ${({ theme }) => theme.colours.neutral[100]};
   border-radius: 4px;
-  color: ${({ theme }) => theme.colours.text};
-  font-size: 1.2rem;
   text-decoration: none;
-  margin-bottom: 40px;
   padding: 10px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &:hover {
     background-color: ${({ theme }) => theme.colours.neutral[200]};
@@ -57,20 +65,12 @@ const ButtonLink = styled.a`
 `;
 
 const PlainLink = styled.a`
-  color: ${({ theme }) => theme.colours.text};
-  font-size: 0.9rem;
+  ${sharedStyles}
+
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-  }
-
-  @media (min-width: 800px) {
-    font-size: 1rem;
-  }
-
-  @media (min-width: 1400px) {
-    font-size: 1.2rem;
   }
 `;
 

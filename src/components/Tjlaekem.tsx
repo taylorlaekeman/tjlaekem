@@ -20,9 +20,8 @@ const App: FunctionComponent = () => (
         <Text type="category">Experience</Text>
         <Section>
           <Text type="section">Canvass Analytics</Text>
-          <Text type="paragraph">
-            Full Stack Software Engineer, August 2018&ndash;Present
-          </Text>
+          <Text type="paragraph">Full Stack Software Engineer</Text>
+          <Text type="paragraph">August 2018&ndash;Present</Text>
           <Text type="paragraph">
             At Canvass Analytics, we build tools that allow industrial engineers
             to train machine learning models on their process data and deploy
@@ -36,9 +35,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">Fourwalls Digital</Text>
-          <Text type="paragraph">
-            Software Development Coop, September 2017&ndash;December 2017
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">September 2017&ndash;December 2017</Text>
           <Text type="paragraph">
             Fourwalls Digital is a tool built for real estate agents and
             brokerages in Toronto. During my coop with Fourwalls, I participated
@@ -56,9 +54,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">AbacusNext</Text>
-          <Text type="paragraph">
-            Software Development Coop, September 2016&ndash;December 2016
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">September 2016&ndash;December 2016</Text>
           <Text type="paragraph">
             AbacusNext offers a range of digital tools for lawyers and law
             firms. At AbacusNext, I designed and implemented an intermediate API
@@ -74,9 +71,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">Encircle</Text>
-          <Text type="paragraph">
-            Software Development Coop, January 2016&ndash;April 2016
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">January 2016&ndash;April 2016</Text>
           <Text type="paragraph">
             Encircle is building a platform for stakeholders at every step of
             the insurance process. While at Encircle, I contributed to the
@@ -90,9 +86,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">MetricWire</Text>
-          <Text type="paragraph">
-            Software Development Coop, May 2015&ndash;August 2015
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">May 2015&ndash;August 2015</Text>
           <Text type="paragraph">
             MetricWire is a survey-delivery tool for mobile phones. At
             MetricWire I worked on the company&apos;s Android application. I
@@ -108,9 +103,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">CBTS Canada Inc</Text>
-          <Text type="paragraph">
-            Software Development Coop, September 2014&ndash;December 2014
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">September 2014&ndash;December 2014</Text>
           <Text type="paragraph">
             CBTS Canada was an experimental project setup to investigate
             automated workstation management to supplement the IT organization
@@ -126,9 +120,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">Cyclica</Text>
-          <Text type="paragraph">
-            Software Development Coop, January 2014&ndash;April 2014
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">January 2014&ndash;April 2014</Text>
           <Text type="paragraph">
             Cyclica offers an drug-discovery platform for pharmaceutical
             researchers. At Cyclica, I implemented a program that converts
@@ -140,9 +133,8 @@ const App: FunctionComponent = () => (
         </Section>
         <Section>
           <Text type="section">Agriculture and Agri-Food Canada</Text>
-          <Text type="paragraph">
-            Software Development Coop, January 2013&ndash;April 2013
-          </Text>
+          <Text type="paragraph">Software Development Coop</Text>
+          <Text type="paragraph">January 2013&ndash;April 2013</Text>
           <Text type="paragraph">
             At Agriculture and Agri-Food Canada, I created a web portal for the
             Canadian government&apos;s newly digitized biological information
@@ -204,6 +196,7 @@ const Wrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 40px;
 `;
 
 export default App;
