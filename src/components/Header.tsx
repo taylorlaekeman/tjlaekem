@@ -24,6 +24,10 @@ const Wrapper = styled.header`
   justify-content: space-between;
   width: 100%;
 
+  @media (min-width: 460px) {
+    width: 380px;
+  }
+
   @media (min-width: 680px) {
     width: 600px;
   }

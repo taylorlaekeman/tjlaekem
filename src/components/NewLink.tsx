@@ -36,6 +36,10 @@ const sharedStyles = css`
     margin-bottom: 0;
   }
 
+  @media (min-width: 460px) {
+    width: 380px;
+  }
+
   @media (min-width: 680px) {
     font-size: 1.2rem;
   }
